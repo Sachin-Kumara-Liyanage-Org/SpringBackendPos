@@ -1,0 +1,42 @@
+
+version: "3.8"
+networks:
+  test:
+
+services:
+  db:
+    platform: linux/x86_64
+    image: mysql:8.3.0
+    container_name: db
+    ports:
+      - "13306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: posSystem
+    command: [
+      '--default-authentication-plugin=caching_sha2_password',
+      '--lower-case-table-names=1'
+    ]
+    volumes:
+      - ./db-init-scripts:/docker-entrypoint-initdb.d
+    restart: always
+    healthcheck:
+      test: [ "CMD", "mysql", "-h", "localhost", "-P", "3306", "-u", "root", "--password=root", "-e", "select 1", "posSystem" ]
+      interval: 1s
+      timeout: 3s
+      retries: 30
+    networks:
+      - test
+  java:
+    platform: linux/x86_64
+    container_name: java
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8001:8080"
+    networks:
+      - test
