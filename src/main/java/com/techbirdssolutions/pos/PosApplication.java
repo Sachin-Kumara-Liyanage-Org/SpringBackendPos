@@ -3,6 +3,8 @@ package com.techbirdssolutions.pos;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.sql.SQLOutput;
+
 @SpringBootApplication
 public class PosApplication
 {
@@ -11,4 +13,5 @@ public class PosApplication
 		SpringApplication.run(PosApplication.class, args);
 	}
 
+	String asd="Hellow World";
 }
