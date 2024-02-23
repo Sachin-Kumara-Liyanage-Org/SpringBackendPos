@@ -13,5 +13,9 @@ public class PosApplication
 		SpringApplication.run(PosApplication.class, args);
 	}
 
-	String asd="Hellow World";
+	public void data()
+	{
+		String asd="Hellow World";
+		System.out.println(asd);
+	}
 }
