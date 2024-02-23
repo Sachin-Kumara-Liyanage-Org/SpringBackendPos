@@ -1,0 +1,1184 @@
+2020-08-21 18:29:58,060 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 18:29:58,062 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 18:29:58,393 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 18:29:58,397 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 18:29:58,397 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 18:29:58,448 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 18:30:00,436 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 18:30:00,612 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 18:30:02,161 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 18:30:48,818 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 18:30:48,819 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 18:30:49,068 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 18:30:49,072 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 18:30:49,072 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 18:30:49,127 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 18:30:52,443 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 18:30:52,611 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 18:30:54,313 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 18:54:51,436 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 18:54:51,438 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 18:54:51,763 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 18:54:51,767 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 18:54:51,767 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 18:54:51,825 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 18:54:55,629 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 18:54:55,814 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 18:54:56,888 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 18:55:49,874 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 18:55:49,876 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 18:55:50,116 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 18:55:50,121 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 18:55:50,122 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 18:55:50,175 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 18:55:53,647 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 18:55:53,822 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 18:55:54,526 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 18:59:35,833 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 18:59:35,836 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 18:59:36,216 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 18:59:36,221 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 18:59:36,221 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 18:59:36,292 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 19:00:11,276 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 19:00:11,278 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 19:00:11,502 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 19:00:11,505 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 19:00:11,505 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 19:00:11,551 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 19:00:32,899 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 19:00:32,900 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 19:00:33,128 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 19:00:33,132 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 19:00:33,132 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 19:00:33,184 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 19:00:36,782 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 19:00:36,964 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 19:00:37,751 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 19:02:46,708 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 19:02:46,710 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 19:02:47,067 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 19:02:47,072 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 19:02:47,072 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 19:02:47,125 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 19:02:49,762 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 19:02:49,948 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 19:02:50,857 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 19:06:02,055 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 19:06:02,057 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 19:06:02,345 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 19:06:02,349 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 19:06:02,349 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 19:06:02,404 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 19:06:53,887 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 19:06:53,889 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 19:06:54,122 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 19:06:54,127 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 19:06:54,128 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 19:06:54,189 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 19:06:58,683 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 19:06:58,858 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 19:07:00,362 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 19:08:08,026 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 19:08:08,028 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 19:08:08,345 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 19:08:08,349 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 19:08:08,350 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 19:08:08,421 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 19:08:11,605 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 19:08:11,784 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 19:08:12,904 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 19:10:14,451 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 19:10:14,452 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 19:10:14,747 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 19:10:14,751 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 19:10:14,751 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 19:10:14,804 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 19:10:17,930 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 19:10:18,102 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 19:10:19,281 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 19:13:57,724 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 19:13:57,726 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 19:13:58,031 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 19:13:58,034 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 19:13:58,035 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 19:13:58,084 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 19:13:59,275 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 19:13:59,449 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 19:14:00,545 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 19:15:59,440 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 19:15:59,442 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 19:15:59,745 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 19:15:59,750 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 19:15:59,750 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 19:15:59,812 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 19:16:01,297 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 19:16:01,482 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 19:16:02,208 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 19:17:34,081 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 19:17:34,083 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 19:17:34,424 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 19:17:34,427 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 19:17:34,427 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 19:17:34,486 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 19:17:35,932 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 19:17:36,117 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 19:17:37,221 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 19:19:21,488 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 19:19:21,490 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 19:19:21,797 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 19:19:21,801 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 19:19:21,801 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 19:19:21,863 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 19:19:23,272 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 19:19:23,472 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 19:19:24,386 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 19:20:59,581 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 19:20:59,584 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 19:20:59,880 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 19:20:59,884 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 19:20:59,885 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 19:20:59,943 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 19:21:01,413 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 19:21:01,591 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 19:21:02,770 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 19:24:04,923 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 19:24:04,925 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 19:24:05,222 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 19:24:05,225 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 19:24:05,225 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 19:24:05,274 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 19:24:06,653 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 19:24:06,842 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 19:24:07,804 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 19:26:34,227 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 19:26:34,228 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 19:26:34,527 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 19:26:34,531 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 19:26:34,532 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 19:26:34,586 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 19:26:36,008 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 19:26:36,192 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 19:26:37,099 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 19:30:00,072 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 19:30:00,075 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 19:30:00,316 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 19:30:00,321 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 19:30:00,321 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 19:30:00,380 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 22:27:01,224 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 22:27:01,243 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 22:27:01,556 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 22:27:01,564 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 22:27:01,564 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 22:27:01,640 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 22:30:42,237 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 22:30:42,239 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 22:30:42,565 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 22:30:42,568 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 22:30:42,568 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 22:30:42,614 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 22:30:45,332 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 22:30:49,530 [ERROR] - Pos.Service.DBService.get_DBservice(DBService.java:49) - com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2020-08-21 22:30:49,590 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 22:30:53,683 [ERROR] - Pos.Service.DBService.get_DBservice(DBService.java:49) - com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2020-08-21 22:30:53,729 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 22:30:57,809 [ERROR] - Pos.Service.DBService.get_DBservice(DBService.java:49) - com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2020-08-21 22:31:09,017 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 22:31:09,147 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 22:31:11,430 [ERROR] - Pos.Service.UserService.checkLogin(UserService.java:32) - java.lang.NullPointerException
+2020-08-21 22:31:12,513 [ERROR] - Pos.Service.UserService.checkLogin(UserService.java:32) - java.lang.NullPointerException
+2020-08-21 22:31:13,643 [ERROR] - Pos.Service.UserService.checkLogin(UserService.java:32) - java.lang.NullPointerException
+2020-08-21 22:31:16,081 [INFO ] - Pos.Controller.LoginController.Logout(LoginController.java:64) - User logout id: 1
+2020-08-21 22:31:17,070 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 22:32:14,809 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 22:35:25,230 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 22:35:25,233 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 22:35:25,563 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 22:35:25,568 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 22:35:25,569 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 22:35:25,646 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 22:44:38,401 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 22:44:38,403 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 22:44:38,693 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 22:44:38,696 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 22:44:38,697 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 22:44:38,737 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 22:44:40,417 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 22:44:40,569 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 22:44:41,423 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 22:46:42,198 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 22:46:42,200 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 22:46:42,492 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 22:46:42,496 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 22:46:42,496 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 22:46:42,538 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 22:46:48,120 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 22:46:48,263 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 22:46:49,250 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 22:53:58,646 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 22:53:58,649 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 22:53:58,965 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 22:53:58,968 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 22:53:58,968 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 22:53:59,017 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 22:54:02,801 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 22:54:02,961 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 22:54:03,534 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 22:55:07,208 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 22:55:07,210 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 22:55:07,483 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 22:55:07,487 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 22:55:07,487 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 22:55:07,534 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 22:55:09,879 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 22:55:10,020 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 22:55:11,337 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 22:58:16,234 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 22:58:16,235 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 22:58:16,555 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 22:58:16,559 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 22:58:16,559 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 22:58:16,613 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 22:58:18,236 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 22:58:18,388 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 22:58:19,353 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 23:00:13,282 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 23:00:13,283 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 23:00:13,584 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 23:00:13,587 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 23:00:13,587 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 23:00:13,629 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 23:00:14,802 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 23:00:14,951 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 23:00:16,644 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 23:01:42,024 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 23:01:42,026 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 23:01:42,264 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 23:01:42,267 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 23:01:42,267 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 23:01:42,309 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 23:01:43,473 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 23:01:43,622 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 23:01:44,536 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 23:21:52,061 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 23:21:52,062 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 23:21:52,366 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 23:21:52,369 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 23:21:52,369 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 23:21:52,411 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 23:21:53,751 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 23:21:53,895 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 23:21:54,853 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 23:24:22,839 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 23:24:22,841 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 23:24:23,164 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 23:24:23,169 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 23:24:23,169 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 23:24:23,218 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 23:24:26,697 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 23:24:26,833 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 23:24:27,843 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 23:24:38,025 [ERROR] - Pos.Service.StockModelService.addStock(StockModelService.java:46) - Add new Recode To Stock
+2020-08-21 23:25:19,114 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 23:25:19,116 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 23:25:19,372 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 23:25:19,376 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 23:25:19,376 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 23:25:19,422 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 23:25:22,319 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 23:25:22,460 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 23:25:23,252 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 23:25:26,458 [ERROR] - Pos.Service.StockModelService.addStock(StockModelService.java:46) - Add new Recode To Stock
+2020-08-21 23:25:37,846 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 23:25:45,247 [ERROR] - Pos.Service.StockModelService.addStock(StockModelService.java:46) - Add new Recode To Stock
+2020-08-21 23:25:51,945 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 23:27:54,236 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 23:27:54,237 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 23:27:54,530 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 23:27:54,533 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 23:27:54,533 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 23:27:54,585 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 23:27:56,995 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 23:27:57,167 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 23:27:58,273 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 23:29:28,924 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 23:30:51,315 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 23:30:51,317 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 23:30:51,604 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 23:30:51,608 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 23:30:51,608 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 23:30:51,650 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 23:30:55,259 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 23:30:55,404 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 23:30:56,607 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 23:31:57,110 [ERROR] - Pos.Service.StockModelService.addStock(StockModelService.java:46) - Add new Recode To Stock
+2020-08-21 23:32:39,068 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 23:32:39,070 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 23:32:39,294 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 23:32:39,297 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 23:32:39,297 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 23:32:39,341 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 23:32:42,828 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 23:32:42,967 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 23:32:44,298 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 23:32:59,030 [INFO ] - Pos.Service.StockModelService.addStock(StockModelService.java:46) - Add new Recode To Stock
+2020-08-21 23:45:43,850 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 23:45:43,852 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 23:45:44,150 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 23:45:44,154 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 23:45:44,154 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 23:45:44,194 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 23:45:47,876 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 23:45:48,012 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 23:45:48,985 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 23:45:54,704 [ERROR] - Pos.Service.StockModelService.removeData(StockModelService.java:151) - java.sql.SQLException: No value specified for parameter 1
+2020-08-21 23:46:43,965 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 23:46:43,967 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 23:46:44,205 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 23:46:44,209 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 23:46:44,209 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 23:46:44,255 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 23:46:49,909 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 23:46:50,063 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 23:46:51,303 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 23:46:55,965 [INFO ] - Pos.Service.StockModelService.removeData(StockModelService.java:149) - Stock Recode Removed id: 14
+2020-08-21 23:47:10,250 [INFO ] - Pos.Service.StockModelService.removeData(StockModelService.java:149) - Stock Recode Removed id: 1
+2020-08-21 23:54:21,319 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 23:54:21,322 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 23:54:21,667 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 23:54:21,671 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 23:54:21,671 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 23:54:21,713 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 23:54:58,502 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 23:54:58,504 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 23:54:58,728 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 23:54:58,731 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 23:54:58,731 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 23:54:58,774 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 23:55:00,529 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 23:55:00,674 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 23:55:01,502 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 23:55:12,921 [INFO ] - Pos.Service.StockModelService.EditData(StockModelService.java:178) - Stock Recode Edited id: 13
+2020-08-21 23:55:44,806 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-21 23:55:44,808 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-21 23:55:45,046 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-21 23:55:45,051 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-21 23:55:45,051 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-21 23:55:45,096 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-21 23:55:46,750 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-21 23:55:46,897 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-21 23:55:47,665 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-21 23:55:57,368 [INFO ] - Pos.Service.StockModelService.EditData(StockModelService.java:178) - Stock Recode Edited id: 7
+2020-08-21 23:57:47,518 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-22 00:03:34,664 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 00:03:34,665 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 00:03:34,989 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 00:03:34,992 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 00:03:34,993 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 00:03:35,035 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 00:04:18,401 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 00:04:18,403 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 00:04:18,655 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 00:04:18,659 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 00:04:18,659 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 00:04:18,711 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 00:04:21,419 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 00:04:21,564 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 00:04:22,618 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-22 00:05:54,668 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 00:05:54,671 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 00:05:54,935 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 00:05:54,939 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 00:05:54,939 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 00:05:54,986 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 00:05:59,692 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 00:05:59,842 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 00:06:00,858 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-22 00:48:48,152 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 00:48:48,155 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 00:48:48,502 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 00:48:48,506 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 00:48:48,506 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 00:48:48,561 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 00:48:50,534 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 00:48:50,704 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 00:48:51,918 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:21) - open stock form
+2020-08-22 00:48:58,430 [INFO ] - Pos.Controller.LoginController.Logout(LoginController.java:64) - User logout id: 1
+2020-08-22 01:16:45,260 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 01:16:45,262 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 01:16:45,583 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 01:16:45,586 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 01:16:45,586 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 01:16:45,627 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 01:18:05,164 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 01:18:05,166 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 01:18:05,412 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 01:18:05,416 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 01:18:05,416 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 01:18:05,459 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 01:18:30,969 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 01:18:30,971 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 01:18:31,215 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 01:18:31,219 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 01:18:31,219 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 01:18:31,291 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 01:18:36,190 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 01:18:36,325 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 01:18:38,770 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 01:18:47,474 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 01:18:49,826 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 01:19:04,906 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 01:19:11,626 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 01:19:15,977 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:22) - open stock form
+2020-08-22 01:19:26,411 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:22) - open stock form
+2020-08-22 01:19:30,611 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 01:27:17,275 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 01:27:17,277 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 01:27:17,564 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 01:27:17,568 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 01:27:17,568 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 01:27:17,608 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 01:27:19,077 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 01:27:19,217 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 01:27:20,643 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 01:36:51,669 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 01:36:51,671 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 01:36:51,907 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 01:36:51,910 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 01:36:51,910 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 01:36:51,950 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 01:36:53,535 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 01:36:53,684 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 01:36:54,588 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 01:39:46,923 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 01:39:46,925 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 01:39:47,232 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 01:39:47,236 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 01:39:47,236 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 01:39:47,278 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 01:39:48,811 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 01:39:48,969 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 01:39:49,827 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 01:40:55,725 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 01:40:55,727 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 01:40:56,035 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 01:40:56,039 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 01:40:56,039 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 01:40:56,094 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 01:40:57,498 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 01:40:57,652 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 01:40:58,469 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 01:46:09,243 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 01:46:09,244 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 01:46:09,545 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 01:46:09,548 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 01:46:09,549 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 01:46:09,589 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 01:46:10,875 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 01:46:11,015 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 01:46:12,050 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 01:47:26,292 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 01:47:26,293 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 01:47:26,537 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 01:47:26,540 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 01:47:26,541 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 01:47:26,588 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 01:47:28,088 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 01:47:28,238 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 01:47:29,213 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 01:49:23,033 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 01:49:23,035 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 01:49:23,311 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 01:49:23,315 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 01:49:23,315 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 01:49:23,355 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 01:49:24,677 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 01:49:24,816 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 01:49:26,245 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 01:50:55,284 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 01:50:55,285 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 01:50:55,567 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 01:50:55,570 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 01:50:55,570 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 01:50:55,612 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 01:50:57,085 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 01:50:57,225 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 01:50:58,574 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 02:00:01,645 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 02:00:01,646 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 02:00:01,946 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 02:00:01,949 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 02:00:01,949 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 02:00:01,990 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 02:00:03,044 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 02:00:03,182 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 02:00:04,066 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 02:00:40,321 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 02:00:40,323 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 02:00:40,562 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 02:00:40,566 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 02:00:40,566 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 02:00:40,616 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 02:00:44,871 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 02:00:45,009 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 02:00:46,201 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 02:04:45,532 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 02:04:45,534 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 02:04:45,831 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 02:04:45,834 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 02:04:45,834 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 02:04:45,875 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 02:04:47,257 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 02:04:47,400 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 02:04:48,191 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 02:14:31,609 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 02:14:31,611 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 02:14:31,912 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 02:14:31,915 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 02:14:31,915 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 02:14:31,958 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 02:14:36,328 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 02:14:36,467 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 02:14:37,904 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 02:17:24,758 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 02:17:24,760 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 02:17:25,062 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 02:17:25,066 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 02:17:25,066 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 02:17:25,114 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 02:17:26,298 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 02:17:26,448 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 02:17:27,097 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 02:18:37,456 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 02:18:37,458 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 02:18:37,709 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 02:18:37,713 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 02:18:37,713 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 02:18:37,758 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 02:18:39,237 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 02:18:39,381 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 02:18:40,438 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 02:39:54,459 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 02:39:54,461 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 02:39:54,759 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 02:39:54,763 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 02:39:54,763 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 02:39:54,804 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 02:39:56,218 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 02:39:56,369 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 02:39:57,264 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 02:42:01,807 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 02:42:01,809 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 02:42:02,095 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 02:42:02,098 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 02:42:02,098 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 02:42:02,140 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 02:42:03,824 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 02:42:03,962 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 02:42:05,154 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 02:53:20,964 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 02:53:20,965 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 02:53:21,253 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 02:53:21,256 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 02:53:21,256 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 02:53:21,297 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 02:53:26,688 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 02:53:26,833 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 02:53:27,429 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 09:36:59,813 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 09:36:59,817 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 09:37:00,117 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 09:37:00,126 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 09:37:00,126 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 09:37:00,195 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 09:37:02,639 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 09:37:06,879 [ERROR] - Pos.Service.DBService.get_DBservice(DBService.java:49) - com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2020-08-22 09:37:07,030 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 09:37:11,119 [ERROR] - Pos.Service.DBService.get_DBservice(DBService.java:49) - com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2020-08-22 09:37:12,867 [ERROR] - Pos.Service.UserService.checkLogin(UserService.java:32) - java.lang.NullPointerException
+2020-08-22 09:37:14,306 [ERROR] - Pos.Service.UserService.checkLogin(UserService.java:32) - java.lang.NullPointerException
+2020-08-22 09:37:23,104 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 09:37:23,321 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 09:37:25,175 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 09:42:05,641 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 09:42:05,643 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 09:42:05,882 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 09:42:05,887 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 09:42:05,887 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 09:42:05,943 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 09:42:09,210 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 09:42:09,370 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 09:42:10,793 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 09:42:27,032 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 09:42:27,034 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 09:42:27,260 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 09:42:27,264 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 09:42:27,264 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 09:42:27,317 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 09:42:28,771 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 09:42:28,924 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 09:42:30,099 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 09:55:37,094 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 09:55:37,096 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 09:55:37,422 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 09:55:37,426 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 09:55:37,426 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 09:55:37,471 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 09:55:38,707 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 09:55:38,861 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 09:55:39,784 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 10:15:29,152 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:22) - open stock form
+2020-08-22 10:17:43,372 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 10:17:43,373 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 10:17:43,702 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 10:17:43,706 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 10:17:43,706 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 10:17:43,756 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 10:17:45,431 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 10:17:45,594 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 10:17:46,441 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:22) - open stock form
+2020-08-22 10:18:30,113 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 10:18:30,116 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 10:18:30,359 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 10:18:30,365 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 10:18:30,365 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 10:18:30,418 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 10:18:31,831 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 10:18:31,983 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 10:18:33,977 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:22) - open stock form
+2020-08-22 10:41:37,021 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 10:41:37,023 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 10:41:37,368 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 10:41:37,373 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 10:41:37,373 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 10:41:37,433 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 10:41:39,692 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 10:41:39,893 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 10:41:41,539 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 10:50:25,586 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 10:50:25,588 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 10:50:25,937 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 10:50:25,944 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 10:50:25,944 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 10:50:26,019 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 10:50:27,599 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 10:50:27,807 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 10:50:28,682 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 10:51:49,177 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:22) - open stock form
+2020-08-22 10:53:52,295 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 10:53:52,297 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 10:53:52,606 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 10:53:52,610 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 10:53:52,610 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 10:53:52,663 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 10:53:55,463 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 10:53:55,745 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 10:53:56,857 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:22) - open stock form
+2020-08-22 10:54:06,164 [INFO ] - Pos.Controller.LoginController.Logout(LoginController.java:64) - User logout id: 1
+2020-08-22 10:54:07,511 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 10:54:08,994 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 11:12:05,116 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 11:12:05,118 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 11:12:05,448 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 11:12:05,452 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 11:12:05,452 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 11:12:05,514 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 11:12:09,845 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 11:12:10,148 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 11:12:18,173 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:22) - open stock form
+2020-08-22 11:12:21,062 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 18:42:59,029 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 18:42:59,033 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 18:42:59,348 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 18:42:59,359 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 18:42:59,359 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 18:42:59,433 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 18:43:01,296 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 18:43:05,494 [ERROR] - Pos.Service.DBService.get_DBservice(DBService.java:49) - com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2020-08-22 18:43:11,917 [ERROR] - Pos.Service.UserService.checkLogin(UserService.java:32) - java.lang.NullPointerException
+2020-08-22 18:43:14,465 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 18:43:14,622 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 18:43:16,402 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 18:45:57,466 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 18:45:57,468 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 18:45:57,746 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 18:45:57,750 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 18:45:57,750 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 18:45:57,794 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 18:45:59,315 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 18:45:59,458 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 18:46:00,938 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 18:46:53,249 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 18:46:53,251 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 18:46:53,510 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 18:46:53,515 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 18:46:53,515 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 18:46:53,564 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 18:46:55,186 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 18:46:55,330 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 18:46:56,225 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 18:47:56,896 [INFO ] - Pos.Controller.LoginController.Logout(LoginController.java:64) - User logout id: 1
+2020-08-22 18:49:15,428 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 18:49:15,432 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 18:49:15,750 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 18:49:15,754 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 18:49:15,754 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 18:49:15,799 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 18:49:16,779 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 18:49:16,920 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 18:49:19,201 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 18:49:21,855 [INFO ] - Pos.Controller.LoginController.Logout(LoginController.java:64) - User logout id: 1
+2020-08-22 18:49:22,850 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 18:49:24,185 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 18:54:32,138 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:22) - open stock form
+2020-08-22 19:07:52,123 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 19:21:31,978 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 19:21:31,981 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 19:21:32,349 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 19:21:32,354 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 19:21:32,354 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 19:21:32,418 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 19:21:33,879 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 19:21:34,025 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 19:21:34,962 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 19:22:13,899 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 19:22:13,901 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 19:22:14,164 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 19:22:14,167 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 19:22:14,168 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 19:22:14,216 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 19:22:15,203 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 19:22:15,344 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 19:22:16,465 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 19:27:08,458 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 19:27:08,460 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 19:27:08,765 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 19:27:08,768 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 19:27:08,768 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 19:27:08,810 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 19:27:10,297 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 19:27:10,438 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 19:27:11,710 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 19:27:52,017 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 19:42:54,024 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 19:42:54,026 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 19:42:54,362 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 19:42:54,366 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 19:42:54,366 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 19:42:54,415 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:45) - Serial Didn't Match:
+2020-08-22 19:43:54,902 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 19:43:54,905 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 19:43:55,182 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 19:43:55,186 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 19:43:55,186 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 19:43:55,239 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 19:44:37,339 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 19:44:37,503 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 19:44:50,577 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:22) - open stock form
+2020-08-22 19:45:50,102 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:22) - open stock form
+2020-08-22 19:48:21,600 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 20:15:21,780 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 20:15:21,783 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 20:15:22,153 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 20:15:22,157 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 20:15:22,157 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 20:15:22,204 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 20:15:26,730 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 20:15:26,895 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 20:15:28,612 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 20:35:07,564 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 20:35:07,566 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 20:35:07,913 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 20:35:07,916 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 20:35:07,917 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 20:35:07,969 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 20:35:09,515 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 20:35:09,705 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 20:35:11,815 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 20:35:28,011 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:22) - open stock form
+2020-08-22 20:35:52,094 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 20:41:05,113 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 20:41:05,115 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 20:41:05,355 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 20:41:05,358 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 20:41:05,358 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 20:41:05,405 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 20:41:06,846 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 20:41:07,016 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 20:41:07,937 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 20:42:32,385 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 20:42:32,387 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 20:42:32,643 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 20:42:32,646 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 20:42:32,646 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 20:42:32,695 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 20:42:34,257 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 20:42:34,421 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 20:42:35,426 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 20:44:44,137 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 20:44:44,139 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 20:44:44,441 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 20:44:44,445 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 20:44:44,445 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 20:44:44,493 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 20:44:45,950 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 20:44:46,126 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 20:44:47,202 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 20:46:29,720 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:22) - open stock form
+2020-08-22 20:47:48,275 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 20:47:48,277 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 20:47:48,638 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 20:47:48,643 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 20:47:48,643 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 20:47:48,700 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 20:47:50,365 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 20:47:50,557 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 20:47:51,778 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:22) - open stock form
+2020-08-22 20:48:42,703 [INFO ] - Pos.Service.StockModelService.addStock(StockModelService.java:59) - Add new Recode To Stock
+2020-08-22 20:49:13,721 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 20:51:00,645 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 20:51:00,647 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 20:51:00,988 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 20:51:00,991 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 20:51:00,991 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 20:51:01,039 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 20:51:02,865 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 20:51:03,057 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 20:51:04,006 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 21:27:10,572 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 21:27:10,573 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 21:27:10,882 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 21:27:10,885 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 21:27:10,885 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 21:27:10,926 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 21:27:12,291 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 21:27:12,441 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 21:27:13,593 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:22) - open stock form
+2020-08-22 21:32:08,701 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 21:32:08,703 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 21:32:08,979 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 21:32:08,983 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 21:32:08,983 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 21:32:09,026 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 21:32:10,419 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 21:32:10,563 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 21:32:12,167 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 21:35:55,285 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 21:35:55,288 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 21:35:55,583 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 21:35:55,586 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 21:35:55,587 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 21:35:55,631 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 21:35:56,953 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 21:35:57,096 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 21:35:58,779 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 21:38:46,688 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 21:38:46,690 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 21:38:46,974 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 21:38:46,977 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 21:38:46,977 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 21:38:47,018 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 21:38:48,309 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 21:38:48,461 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 21:38:49,653 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 21:40:23,809 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 21:40:23,811 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 21:40:24,093 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 21:40:24,096 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 21:40:24,096 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 21:40:24,138 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 21:40:25,355 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 21:40:25,502 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 21:40:27,132 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 21:43:19,207 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 21:43:19,208 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 21:43:19,506 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 21:43:19,509 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 21:43:19,509 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 21:43:19,551 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 21:43:21,391 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 21:43:21,536 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 21:43:26,355 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 21:44:28,271 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 21:44:28,272 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 21:44:28,514 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 21:44:28,518 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 21:44:28,518 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 21:44:28,563 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 21:44:29,958 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 21:44:30,115 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 21:44:31,382 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 21:47:39,777 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 21:47:39,779 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 21:47:40,112 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 21:47:40,117 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 21:47:40,117 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 21:47:40,164 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 21:47:42,514 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 21:47:42,660 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 21:47:43,741 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 21:49:58,642 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 21:49:58,644 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 21:49:58,917 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 21:49:58,920 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 21:49:58,920 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 21:49:58,961 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 21:50:04,212 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 21:50:04,362 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 21:50:05,297 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 21:50:44,143 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 21:50:44,144 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 21:50:44,376 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 21:50:44,379 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 21:50:44,380 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 21:50:44,422 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 21:50:52,373 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 21:50:52,522 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 21:50:53,417 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 21:56:07,774 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 21:56:07,776 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 21:56:08,070 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 21:56:08,073 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 21:56:08,073 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 21:56:08,115 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 21:56:09,645 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 21:56:09,796 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 21:56:10,326 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 21:57:20,422 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 21:57:20,425 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 21:57:20,675 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 21:57:20,678 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 21:57:20,678 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 21:57:20,728 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 21:57:21,954 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 21:57:22,099 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 21:57:23,346 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 22:04:12,891 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 22:04:12,893 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 22:04:13,182 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 22:04:13,185 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 22:04:13,185 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 22:04:13,226 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 22:04:16,700 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 22:04:16,846 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 22:04:17,547 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 22:04:56,488 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 22:04:56,489 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 22:04:56,710 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 22:04:56,713 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 22:04:56,713 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 22:04:56,761 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 22:04:58,167 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 22:04:58,318 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 22:05:00,241 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 22:23:55,863 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 22:23:55,864 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 22:23:56,149 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 22:23:56,152 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 22:23:56,152 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 22:23:56,193 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 22:23:59,117 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 22:23:59,264 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 22:24:00,354 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 22:24:45,879 [ERROR] - Pos.Service.BillModelService.savebill(BillModelService.java:95) - java.sql.SQLSyntaxErrorException: Unknown column 'Bid' in 'field list'
+2020-08-22 22:25:55,340 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 22:25:55,342 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 22:25:55,635 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 22:25:55,638 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 22:25:55,638 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 22:25:55,680 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 22:26:28,304 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 22:26:28,455 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 22:26:30,613 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 22:27:25,601 [ERROR] - Pos.Service.BillModelService.savebill(BillModelService.java:95) - java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`poslocal`.`mst_bill`, CONSTRAINT `dk_sa` FOREIGN KEY (`Id`) REFERENCES `mst_user` (`Id`) ON UPDATE CASCADE)
+2020-08-22 22:28:25,965 [ERROR] - Pos.Service.BillModelService.savebill(BillModelService.java:95) - java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`poslocal`.`mst_bill`, CONSTRAINT `dk_sa` FOREIGN KEY (`Id`) REFERENCES `mst_user` (`Id`) ON UPDATE CASCADE)
+2020-08-22 22:29:51,028 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 22:29:51,030 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 22:29:51,304 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 22:29:51,307 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 22:29:51,307 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 22:29:51,350 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 22:29:53,141 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 22:29:53,285 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 22:29:54,634 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 22:29:56,857 [ERROR] - Pos.Service.BillModelService.savebill(BillModelService.java:95) - java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`poslocal`.`mst_bill`, CONSTRAINT `dk_sa` FOREIGN KEY (`Id`) REFERENCES `mst_user` (`Id`) ON UPDATE CASCADE)
+2020-08-22 22:30:52,342 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 22:30:52,345 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 22:30:52,584 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 22:30:52,588 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 22:30:52,588 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 22:30:52,631 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 22:30:53,451 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 22:30:53,596 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 22:30:54,809 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 22:30:59,828 [ERROR] - Pos.Service.BillModelService.savebill(BillModelService.java:97) - java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`poslocal`.`mst_bill`, CONSTRAINT `dk_sa` FOREIGN KEY (`Id`) REFERENCES `mst_user` (`Id`) ON UPDATE CASCADE)
+2020-08-22 22:31:31,711 [ERROR] - Pos.Service.BillModelService.savebill(BillModelService.java:97) - java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`poslocal`.`mst_bill`, CONSTRAINT `dk_sa` FOREIGN KEY (`Id`) REFERENCES `mst_user` (`Id`) ON UPDATE CASCADE)
+2020-08-22 22:33:29,401 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 22:44:10,740 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2020-08-22 22:44:10,742 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2020-08-22 22:44:10,957 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2020-08-22 22:44:10,960 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2020-08-22 22:44:10,960 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2020-08-22 22:44:11,003 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2020-08-22 22:44:12,449 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2020-08-22 22:44:12,593 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2020-08-22 22:44:13,952 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:22) - open stock form
+2020-08-22 22:44:16,425 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 22:45:17,027 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:22) - open stock form
+2020-08-22 22:45:24,639 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 22:46:42,890 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2020-08-22 22:46:45,761 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:22) - open stock form
+2021-07-12 11:55:07,726 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2021-07-12 11:55:07,729 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2021-07-12 11:55:08,167 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2021-07-12 11:55:08,171 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2021-07-12 11:55:08,171 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2021-07-12 11:55:08,231 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2021-07-12 11:55:14,434 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2021-07-12 11:55:14,441 [ERROR] - Pos.Service.DBService.get_DBservice(DBService.java:49) - java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/poslocal?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2021-07-12 11:55:27,013 [ERROR] - Pos.Service.UserService.checkLogin(UserService.java:32) - java.lang.NullPointerException
+2021-07-12 12:00:48,814 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2021-07-12 12:00:48,818 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2021-07-12 12:00:49,188 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2021-07-12 12:00:49,193 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2021-07-12 12:00:49,194 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2021-07-12 12:00:49,251 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2021-07-12 12:00:50,902 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2021-07-12 12:00:50,912 [ERROR] - Pos.Service.DBService.get_DBservice(DBService.java:49) - java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/poslocal?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2021-07-12 12:01:03,604 [ERROR] - Pos.Service.UserService.checkLogin(UserService.java:32) - java.lang.NullPointerException
+2021-07-12 12:10:24,001 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2021-07-12 12:10:24,003 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2021-07-12 12:10:24,378 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2021-07-12 12:10:24,382 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2021-07-12 12:10:24,382 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2021-07-12 12:10:24,434 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2021-07-12 12:11:49,553 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2021-07-12 12:11:49,556 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2021-07-12 12:11:49,858 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2021-07-12 12:11:49,862 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2021-07-12 12:11:49,862 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2021-07-12 12:11:49,909 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2021-07-12 12:11:57,367 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2021-07-12 12:11:57,531 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2021-07-12 12:16:17,683 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2021-07-12 12:16:17,684 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2021-07-12 12:16:17,983 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2021-07-12 12:16:17,987 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2021-07-12 12:16:17,987 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2021-07-12 12:16:18,050 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2021-07-12 12:16:40,665 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2021-07-12 12:16:40,667 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2021-07-12 12:16:40,894 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2021-07-12 12:16:40,899 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2021-07-12 12:16:40,899 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2021-07-12 12:16:40,953 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2021-07-12 12:28:02,496 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2021-07-12 12:28:02,499 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2021-07-12 12:28:02,727 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2021-07-12 12:28:02,731 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2021-07-12 12:28:02,731 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2021-07-12 12:28:02,777 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2021-07-12 12:28:10,124 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2021-07-12 12:28:10,125 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2021-07-12 12:28:10,344 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2021-07-12 12:28:10,347 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2021-07-12 12:28:10,348 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2021-07-12 12:28:10,396 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2021-07-12 12:28:18,696 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2021-07-12 12:28:18,853 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2021-07-12 12:28:20,391 [INFO ] - Pos.Controller.MainManuController.openPosForm(MainManuController.java:30) - open Pos form
+2021-07-12 12:29:03,606 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2021-07-12 12:29:03,607 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2021-07-12 12:29:03,832 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2021-07-12 12:29:03,837 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2021-07-12 12:29:03,838 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2021-07-12 12:29:03,897 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2021-07-12 12:34:28,093 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2021-07-12 12:34:28,094 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2021-07-12 12:34:28,931 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2021-07-12 12:34:28,934 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2021-07-12 12:34:28,935 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2021-07-12 12:34:28,979 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:36) - reg using bios
+2021-07-12 12:34:37,990 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2021-07-12 12:34:38,146 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2021-07-12 12:34:39,651 [INFO ] - Pos.Controller.MainManuController.openStocksForm(MainManuController.java:22) - open stock form
+2021-07-12 12:37:17,216 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2021-07-12 12:37:17,218 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2021-07-12 12:37:17,516 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2021-07-12 12:37:17,521 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2021-07-12 12:37:17,521 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2021-07-12 12:37:27,660 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2021-07-12 12:37:27,662 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2021-07-12 12:37:27,868 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2021-07-12 12:37:27,871 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2021-07-12 12:37:27,872 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2021-07-12 12:38:27,149 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2021-07-12 12:38:27,151 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2021-07-12 12:38:27,390 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2021-07-12 12:38:27,395 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2021-07-12 12:38:27,395 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2021-07-12 12:39:14,726 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2021-07-12 12:39:14,728 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2021-07-12 12:39:14,951 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2021-07-12 12:39:14,955 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2021-07-12 12:39:14,955 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2021-07-12 12:44:59,353 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2021-07-12 12:44:59,354 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2021-07-12 12:44:59,601 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2021-07-12 12:44:59,607 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2021-07-12 12:44:59,607 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2021-07-12 12:45:35,409 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2021-07-12 12:45:35,412 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2021-07-12 12:45:35,853 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2021-07-12 12:45:35,860 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2021-07-12 12:45:35,860 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2021-07-12 12:45:47,269 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2021-07-12 12:45:47,270 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2021-07-12 12:45:47,491 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2021-07-12 12:45:47,495 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2021-07-12 12:45:47,495 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2021-07-12 12:47:02,071 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2021-07-12 12:47:02,073 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2021-07-12 12:47:02,291 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2021-07-12 12:47:02,294 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2021-07-12 12:47:02,294 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2021-07-12 12:47:09,177 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2021-07-12 12:47:09,334 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2021-07-12 12:48:09,896 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2021-07-12 12:48:09,897 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2021-07-12 12:48:10,129 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2021-07-12 12:48:10,134 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2021-07-12 12:48:10,134 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2021-07-12 12:48:16,579 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2021-07-12 12:48:16,735 [WARN ] - Pos.Controller.LoginController.checkLogin(LoginController.java:43) - Can't find User try again 
+2021-07-12 12:48:23,794 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
+2021-07-12 12:50:05,865 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2021-07-12 12:50:05,866 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2021-07-12 12:50:06,098 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2021-07-12 12:50:06,102 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2021-07-12 12:50:06,103 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2021-07-12 12:50:21,132 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2021-07-12 12:50:21,133 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2021-07-12 12:50:21,368 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2021-07-12 12:50:21,372 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2021-07-12 12:50:21,372 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2021-07-12 12:50:30,734 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:30) - DisplayHeight:1080
+2021-07-12 12:50:30,736 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:31) - DisplayWidth:1920
+2021-07-12 12:50:30,956 [INFO ] - Pos.Main.MainStarter.main(MainStarter.java:33) - PC serial No: J8NRCX03R79834A
+2021-07-12 12:50:30,961 [INFO ] - Pos.Controller.PropertiesReader.getPropertisReader(PropertiesReader.java:16) - create new PropertisReader object
+2021-07-12 12:50:30,961 [INFO ] - Pos.Controller.PropertiesReader.getPropValues(PropertiesReader.java:23) - load new props values
+2021-07-12 12:50:36,822 [INFO ] - Pos.Service.DBService.get_DBservice(DBService.java:24) - Create new db con object
+2021-07-12 12:50:36,986 [INFO ] - Pos.Controller.LoginController.checkLogin(LoginController.java:30) - User login id: 1
