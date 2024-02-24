@@ -15,4 +15,8 @@ public class TestRestController {
     public String test2() {
         return "Hello World2";
     }
+    @GetMapping("/test3")
+    public String test3() {
+        return "Hello World3";
+    }
 }
