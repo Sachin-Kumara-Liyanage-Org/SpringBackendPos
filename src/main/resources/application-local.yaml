@@ -3,14 +3,17 @@ server:
 spring:
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: create
     properties:
       hibernate:
         dialect: "org.hibernate.dialect.MySQLDialect"
         format_sql: true
         show_sql: true
   datasource:
-    url: "jdbc:mysql://localhost:13306/posSystem"
-    username: root
-    password: root
+    host: ENC(ATGjyppUr6k+SwIV8DndS2ibC+KC92Ky)
+    port: ENC(s+rvumbiGAn1osS1NzJb4w==)
+    dbName: ENC(2DlHJioLBSV8w/DMhag+QVwm4nzJZsYd)
+    url: "jdbc:mysql://${spring.datasource.host}:${spring.datasource.port}/${spring.datasource.dbName}?createDatabaseIfNotExist=true"
+    username: ENC(g+TFDbW46ph9Po+fg4BwzQ==)
+    password: ENC(g+TFDbW46ph9Po+fg4BwzQ==)
     driver-class-name: "com.mysql.cj.jdbc.Driver"

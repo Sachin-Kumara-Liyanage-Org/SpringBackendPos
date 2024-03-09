@@ -1,4 +1,4 @@
-package com.techbirdssolutions.SpringPos;
+package com.techbirdssolutions.springpos;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
