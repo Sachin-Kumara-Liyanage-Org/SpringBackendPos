@@ -1,4 +1,4 @@
-package com.techbirdssolutions.SpringPos;
+package com.techbirdssolutions.springpos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

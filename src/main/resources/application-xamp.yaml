@@ -1,8 +1,6 @@
 server:
   port: 8081
 spring:
-  application:
-    name: "pos-system"
   jpa:
     hibernate:
       ddl-auto: create
@@ -12,14 +10,9 @@ spring:
         show_sql: true
   datasource:
     host: ENC(ATGjyppUr6k+SwIV8DndS2ibC+KC92Ky)
-    port: ENC(s+rvumbiGAn1osS1NzJb4w==)
+    port: ENC(Fd3sl5IZh1ievGoXZq8B/Q==)
     dbName: ENC(2DlHJioLBSV8w/DMhag+QVwm4nzJZsYd)
     url: "jdbc:mysql://${spring.datasource.host}:${spring.datasource.port}/${spring.datasource.dbName}?createDatabaseIfNotExist=true"
     username: ENC(g+TFDbW46ph9Po+fg4BwzQ==)
     password: ENC(g+TFDbW46ph9Po+fg4BwzQ==)
     driver-class-name: "com.mysql.cj.jdbc.Driver"
-
-jasypt:
-  encryptor:
-    password: Tech@1234
-    bean: encryptorBean
