@@ -19,6 +19,9 @@ public class WelcomeMessageRunner implements CommandLineRunner {
     @Value("${server.port}")
     private String serverPort;
 
+    @Value("${server.host:localhost}")
+    private String serverHost;
+
     @Value("${spring.datasource.host}")
     private String databaseHost;
     @Value("${spring.datasource.port}")
@@ -49,6 +52,7 @@ public class WelcomeMessageRunner implements CommandLineRunner {
                         "%s%n" +
                         "\u001B[34m                  \uD83D\uDE0AWelcome to %s!\uD83D\uDE0A\u001B[0m%n"+
                         "\u001B[32m ✔ \u001B[0m Your current profile is: \u001B[36m%s\u001B[0m%n" +
+                        "\u001B[32m ✔ \u001B[0m Your current server Host is: \u001B[36m%s\u001B[0m%n" +
                         "\u001B[32m ✔ \u001B[0m Your current server port is: \u001B[36m%s\u001B[0m%n" +
                         "\u001B[32m ✔ \u001B[0m Your current database Host is: \u001B[36m%s\u001B[0m%n" +
                         "\u001B[32m ✔ \u001B[0m Your current database Port is: \u001B[36m%s\u001B[0m%n" +
@@ -57,6 +61,7 @@ public class WelcomeMessageRunner implements CommandLineRunner {
                         "\u001B[32m ✔ \u001B[0m Your current hibernate ddl-auto is: \u001B[36m%s\u001B[0m%n" +
                         "\u001B[32m ✔ \u001B[0m Your current show sql is: \u001B[36m%s\u001B[0m%n" +
                         "\u001B[32m ✔ \u001B[0m Your current format sql is: \u001B[36m%s\u001B[0m%n" +
+                        "\u001B[32m ✔ \u001B[0m Your current swagger-ui Url is: \u001B[36m%s\u001B[0m%n" +
                         "\u001B[32m ✔ \u001B[0m Application Started Time: \u001B[33m%s\u001B[0m%n" +
                         "\u001B[32m ▶▶Application Started Successfully!▶▶\u001B[0m%n" +
                         "\u001B[35m%s\u001B[0m%n",
@@ -64,6 +69,7 @@ public class WelcomeMessageRunner implements CommandLineRunner {
                 posStr,
                 applicationName,
                 profile,
+                serverHost,
                 serverPort,
                 databaseHost,
                 databasePort,
@@ -72,11 +78,13 @@ public class WelcomeMessageRunner implements CommandLineRunner {
                 hibernateType,
                 showSql,
                 formatSql,
+                "http://"+serverHost+":"+serverPort+"/swagger-ui/index.html",
                 getCurrentTime(),
                 separator
         );
         System.out.println(welcomeMessage);
     }
+
 
     private String getCurrentTime() {
         SimpleDateFormat sdf = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy");
