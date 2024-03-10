@@ -2,6 +2,7 @@ package com.techbirdssolutions.springpos.config;
 
 import com.techbirdssolutions.springpos.service.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -28,16 +29,24 @@ public class SecurityConfig {
 
     @Autowired
     CustomUserDetailsService customUserDetailsService;
+    @Value("${spring.profiles.active}")
+    private String profile;
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        return http.csrf((csrf) -> csrf.disable())
+        http.csrf((csrf) -> csrf.disable())
                 .authorizeHttpRequests((authorizeHttpRequests) -> authorizeHttpRequests
-                        .requestMatchers("/api/auth/**").permitAll().anyRequest().authenticated())
+                        .requestMatchers("/api/auth/**").permitAll())
                 .sessionManagement(
                         (sessionManagement) -> sessionManagement.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .addFilterBefore(jwtAuthFilter,UsernamePasswordAuthenticationFilter.class)
-                .build();
+                .addFilterBefore(jwtAuthFilter,UsernamePasswordAuthenticationFilter.class);
+
+                if(profile.equals("local")||profile.equals("external")){
+                    http.authorizeHttpRequests((authorizeHttpRequests) ->
+                            authorizeHttpRequests.requestMatchers("/swagger-ui/**","/v3/api-docs/**").permitAll());
+                }
+                http.authorizeHttpRequests((authorizeHttpRequests) -> authorizeHttpRequests.anyRequest().authenticated());
+                return http.build();
 
     }
 
