@@ -3,10 +3,10 @@ server:
 spring:
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     properties:
       hibernate:
-        format_sql: true
+        format_sql: false
         show_sql: true
   datasource:
     host: ENC(ATGjyppUr6k+SwIV8DndS2ibC+KC92Ky)
