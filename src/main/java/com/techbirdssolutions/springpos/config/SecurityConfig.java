@@ -20,7 +20,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @Configuration
 @EnableWebSecurity
-//@EnableMethodSecurity
+@EnableMethodSecurity
 public class SecurityConfig {
 
     @Autowired
@@ -31,18 +31,13 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        System.out.println("inside security filter chain");
-//        return http.csrf((csrf)->csrf.disable())
-//                .authorizeHttpRequests((authorizeHttpRequests) ->
-//                        authorizeHttpRequests
-//                                .requestMatchers("/api/auth/login").permitAll().anyRequest().authenticated())
-//                .sessionManagement((sessionManagement) ->
-//                        sessionManagement.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-//                .authenticationProvider(authenticationProvider())
-//                .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class).build();
-        http.authorizeHttpRequests((requests) -> requests.anyRequest().permitAll());
-        http.csrf((csrf) -> csrf.disable());
-        return http.build();
+        return http.csrf((csrf) -> csrf.disable())
+                .authorizeHttpRequests((authorizeHttpRequests) -> authorizeHttpRequests
+                        .requestMatchers("/api/auth/**").permitAll().anyRequest().authenticated())
+                .sessionManagement(
+                        (sessionManagement) -> sessionManagement.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                .addFilterBefore(jwtAuthFilter,UsernamePasswordAuthenticationFilter.class)
+                .build();
 
     }
 

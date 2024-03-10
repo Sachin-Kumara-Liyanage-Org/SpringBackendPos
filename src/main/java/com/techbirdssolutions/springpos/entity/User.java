@@ -20,6 +20,7 @@ public class User {
     private String lastName;
     @Column(unique = true)
     private String email;
+    private String refreshToken;
     private String password;
     private boolean enabled;
 

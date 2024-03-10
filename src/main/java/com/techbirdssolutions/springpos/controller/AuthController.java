@@ -3,12 +3,18 @@ package com.techbirdssolutions.springpos.controller;
 
 import com.techbirdssolutions.springpos.config.JwtService;
 import com.techbirdssolutions.springpos.entity.User;
+import com.techbirdssolutions.springpos.exception.InvalidTokenException;
+import com.techbirdssolutions.springpos.exception.UserDisabledException;
 import com.techbirdssolutions.springpos.model.AuthRequestModel;
 import com.techbirdssolutions.springpos.model.JwtResponseModel;
+import com.techbirdssolutions.springpos.model.RefreshTokenRequestModel;
 import com.techbirdssolutions.springpos.repository.UserRepository;
+import com.techbirdssolutions.springpos.service.AuthenticationService;
 import jakarta.transaction.Transactional;
 import org.apache.catalina.Authenticator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -27,23 +33,27 @@ public class AuthController {
 
     @Autowired
     private UserRepository userRepository;
-    @PostMapping("/login")
-    public JwtResponseModel AuthenticateAndGetToken(@RequestBody AuthRequestModel authRequestModel){
 
+    @Autowired
+    private AuthenticationService authenticationService;
+    @PostMapping("/login")
+    public JwtResponseModel login(@RequestBody AuthRequestModel authRequestModel) throws UserDisabledException {
         Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authRequestModel.getUsername(), authRequestModel.getPassword()));
-        System.out.println("sachin");
         if(authentication.isAuthenticated()){
-            return JwtResponseModel.builder()
-                    .accessToken(jwtService.GenerateToken(authRequestModel.getUsername())).build();
+            return authenticationService.authenticateAndGetToken(authRequestModel.getUsername());
         } else {
             throw new UsernameNotFoundException("invalid user request..!!");
         }
     }
 
-    @PostMapping("/data")
-    public String data(@RequestBody AuthRequestModel authRequestModel){
+    @PostMapping("/refresh")
+    public JwtResponseModel refreshToken(@RequestBody RefreshTokenRequestModel refreshTokenRequestModel) throws UserDisabledException, InvalidTokenException {
+        return authenticationService.refreshToken(refreshTokenRequestModel.getRefreshToken());
+    }
 
-        return userRepository.findByEmail(authRequestModel.getUsername()).getEmail();
-
+    @PostMapping("/logout")
+    public ResponseEntity<String> logout(@RequestBody RefreshTokenRequestModel refreshTokenRequestModel){
+        authenticationService.logout(refreshTokenRequestModel.getRefreshToken());
+        return new ResponseEntity<>("Logged out successfully", HttpStatus.OK);
     }
 }

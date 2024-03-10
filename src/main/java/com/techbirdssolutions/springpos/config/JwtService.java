@@ -50,14 +50,28 @@ public class JwtService {
         return (username.equals(userDetails.getUsername()) && !isTokenExpired(token));
     }
 
-
-
-    public String GenerateToken(String username){
+    public String GenerateToken(String username) {
         Map<String, Object> claims = new HashMap<>();
         return createToken(claims, username);
     }
 
+    public String getUsernameFromToken(String token) {
+        return extractUsername(token);
+    }
 
+    public String generateRefreshToken(String username) {
+        Map<String, Object> claims = new HashMap<>();
+        return createRefreshToken(claims, username);
+    }
+
+    private String createRefreshToken(Map<String, Object> claims, String username) {
+        return Jwts.builder()
+                .setClaims(claims)
+                .setSubject(username)
+                .setIssuedAt(new Date(System.currentTimeMillis()))
+                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60 * 24)) // 24 hours
+                .signWith(getSignKey(), SignatureAlgorithm.HS256).compact();
+    }
 
     private String createToken(Map<String, Object> claims, String username) {
 
@@ -65,7 +79,7 @@ public class JwtService {
                 .setClaims(claims)
                 .setSubject(username)
                 .setIssuedAt(new Date(System.currentTimeMillis()))
-                .setExpiration(new Date(System.currentTimeMillis()+1000*60*1))
+                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 1))
                 .signWith(getSignKey(), SignatureAlgorithm.HS256).compact();
     }
 
