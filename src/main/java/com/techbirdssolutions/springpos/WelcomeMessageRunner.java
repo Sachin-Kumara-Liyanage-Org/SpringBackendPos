@@ -1,5 +1,8 @@
 package com.techbirdssolutions.springpos;
 
+import com.techbirdssolutions.springpos.config.DefaultDataLoad;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -8,6 +11,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @Component
+@Slf4j
 public class WelcomeMessageRunner implements CommandLineRunner {
 
     @Value("${spring.profiles.active}")
@@ -39,6 +43,9 @@ public class WelcomeMessageRunner implements CommandLineRunner {
 
     @Value("${spring.jpa.properties.hibernate.format_sql}")
     private String formatSql;
+
+    @Autowired
+    private DefaultDataLoad defaultDataLoad;
 
     private void printWelcomeMessage() {
         String separator = "==========================================================================================================";
@@ -82,7 +89,7 @@ public class WelcomeMessageRunner implements CommandLineRunner {
                 getCurrentTime(),
                 separator
         );
-        System.out.println(welcomeMessage);
+        log.info("Welcome Message: {}", welcomeMessage);
     }
 
 
@@ -93,6 +100,7 @@ public class WelcomeMessageRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        defaultDataLoad.runDefaultDataLoad();
         printWelcomeMessage();
     }
 }

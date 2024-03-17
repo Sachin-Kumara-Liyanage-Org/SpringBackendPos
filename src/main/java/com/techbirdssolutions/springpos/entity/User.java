@@ -11,17 +11,21 @@ import java.util.Collection;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class User extends Auditable{
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String firstName;
     private String lastName;
     @Column(unique = true)
     private String email;
+    private String phoneNumber;
     private String refreshToken;
     private String password;
+    private String display;
+    private String printer;
+    private String lang;
     private boolean enabled;
 
     @ManyToMany(fetch = FetchType.EAGER)

@@ -11,12 +11,12 @@ import java.util.Collection;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Privilege {
+public class Privilege extends Auditable{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    @Column(unique = true)
     private String name;
 
     @ManyToMany(mappedBy = "privileges")

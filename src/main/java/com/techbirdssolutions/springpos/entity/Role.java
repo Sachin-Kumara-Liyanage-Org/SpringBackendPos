@@ -11,16 +11,16 @@ import java.util.Collection;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Role {
+public class Role extends Auditable{
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    @Column(unique = true)
     private String name;
     @ManyToMany(mappedBy = "roles")
     private Collection<User> users;
 
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
             name = "roles_privileges",
             joinColumns = @JoinColumn(

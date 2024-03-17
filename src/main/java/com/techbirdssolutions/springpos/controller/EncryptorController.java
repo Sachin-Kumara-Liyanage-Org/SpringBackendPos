@@ -16,14 +16,14 @@ public class EncryptorController {
     @Autowired
     SettingEncryptorService settingEncryptorService;
 
-    @PreAuthorize("hasRole('SUPER_ADMIN') or hasAuthority('DO_Encrypt')")
+    @PreAuthorize("hasAuthority('DO_Encrypt')")
     @SecurityRequirement(name = "Authorization")
     @PostMapping("/encrypt")
     public String encrypt(@RequestBody Map<String, String> body) {
         return settingEncryptorService.encrypt(body.get("data"));
     }
 
-    @PreAuthorize("hasRole('SUPER_ADMIN') or hasAuthority('DO_Decrypt')")
+    @PreAuthorize("hasAuthority('DO_Decrypt')")
     @SecurityRequirement(name = "Authorization")
     @PostMapping("/decrypt")
     public String decrypt(@RequestBody Map<String, String> body) {

@@ -4,6 +4,7 @@ package com.techbirdssolutions.springpos.controller;
 import com.techbirdssolutions.springpos.config.JwtService;
 import com.techbirdssolutions.springpos.entity.User;
 import com.techbirdssolutions.springpos.exception.InvalidTokenException;
+import com.techbirdssolutions.springpos.exception.LicenseExpiredException;
 import com.techbirdssolutions.springpos.exception.UserDisabledException;
 import com.techbirdssolutions.springpos.model.AuthRequestModel;
 import com.techbirdssolutions.springpos.model.JwtResponseModel;
@@ -37,7 +38,7 @@ public class AuthController {
     @Autowired
     private AuthenticationService authenticationService;
     @PostMapping("/login")
-    public JwtResponseModel login(@RequestBody AuthRequestModel authRequestModel) throws UserDisabledException {
+    public JwtResponseModel login(@RequestBody AuthRequestModel authRequestModel) throws UserDisabledException, LicenseExpiredException {
         Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authRequestModel.getUsername(), authRequestModel.getPassword()));
         if(authentication.isAuthenticated()){
             return authenticationService.authenticateAndGetToken(authRequestModel.getUsername());
@@ -47,7 +48,7 @@ public class AuthController {
     }
 
     @PostMapping("/refresh")
-    public JwtResponseModel refreshToken(@RequestBody RefreshTokenRequestModel refreshTokenRequestModel) throws UserDisabledException, InvalidTokenException {
+    public JwtResponseModel refreshToken(@RequestBody RefreshTokenRequestModel refreshTokenRequestModel) throws UserDisabledException, InvalidTokenException, LicenseExpiredException {
         return authenticationService.refreshToken(refreshTokenRequestModel.getRefreshToken());
     }
 
