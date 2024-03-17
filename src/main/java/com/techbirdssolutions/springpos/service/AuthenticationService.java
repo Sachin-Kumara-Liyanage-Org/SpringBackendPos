@@ -6,12 +6,14 @@ import com.techbirdssolutions.springpos.exception.InvalidTokenException;
 import com.techbirdssolutions.springpos.exception.UserDisabledException;
 import com.techbirdssolutions.springpos.model.JwtResponseModel;
 import com.techbirdssolutions.springpos.repository.UserRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 
 @Service
+@Slf4j
 public class AuthenticationService {
 
     @Autowired
@@ -29,9 +31,10 @@ public class AuthenticationService {
         // 1. Authenticate the user
         UserDetails userDetails = userDetailsService.loadUserByUsername(username);
         if (!userDetails.isEnabled()) {
+            log.warn("User is disabled: {}",username);
             throw new UserDisabledException("User is disabled");
         }
-
+        log.info("User authenticated successfully: {}",username);
         return this.createToken(username);
     }
 
@@ -49,6 +52,7 @@ public class AuthenticationService {
         User user = userRepository.findByRefreshToken(token);
         user.setRefreshToken(null);
         userRepository.save(user);
+        log.info("User logged out successfully: {}",user.getEmail());
     }
 
     public JwtResponseModel refreshToken(String refreshToken) throws InvalidTokenException, UserDisabledException {
@@ -59,14 +63,15 @@ public class AuthenticationService {
 
         // 1. Validate the refresh token
         if (!jwtService.validateToken(refreshToken,userDetails)) {
+            log.warn("Failed to validate refresh token for user: {}",username);
             throw new InvalidTokenException("Invalid refresh token");
         }
         User user = userRepository.findByEmail(username);
         if(user.getRefreshToken().equals(refreshToken)){
+            log.warn("Mismatch in refresh token for user: {}",username);
             throw new InvalidTokenException("Invalid refresh token");
         }
-
-
+        log.info("Refresh token validated successfully for user: {}",username);
         return this.authenticateAndGetToken(username);
     }
 }

@@ -1,5 +1,6 @@
 package com.techbirdssolutions.springpos;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -8,6 +9,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @Component
+@Slf4j
 public class WelcomeMessageRunner implements CommandLineRunner {
 
     @Value("${spring.profiles.active}")
@@ -82,7 +84,7 @@ public class WelcomeMessageRunner implements CommandLineRunner {
                 getCurrentTime(),
                 separator
         );
-        System.out.println(welcomeMessage);
+        log.info("Welcome Message: {}", welcomeMessage);
     }
 
 

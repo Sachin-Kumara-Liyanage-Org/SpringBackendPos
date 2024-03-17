@@ -23,6 +23,8 @@ spring:
     password: ENC(g+TFDbW46ph9Po+fg4BwzQ==)
     driver-class-name: "com.mysql.cj.jdbc.Driver"
 
+jwt:
+  secret: ENC(xuuLcrjoZqq0CVBqK+Yo0o5oJ3JyNY9ZPmJ6CFGrB0Up+qrjj4g0NB9BljY4tYiN0qGgMKqEvfZEZzePG++Xt6StIltDEgyejcV+jL3vogI=)
 
 jasypt:
   encryptor:
