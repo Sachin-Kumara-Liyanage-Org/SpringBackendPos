@@ -1,4 +1,7 @@
 package com.techbirdssolutions.springpos.config;
+import com.techbirdssolutions.springpos.entity.MetaSettings;
+import com.techbirdssolutions.springpos.entity.customenum.MetadataTypes;
+import com.techbirdssolutions.springpos.repository.MetaSettingsRepository;
 import org.springframework.transaction.annotation.Transactional;
 import com.techbirdssolutions.springpos.entity.Privilege;
 import com.techbirdssolutions.springpos.entity.Role;
@@ -13,6 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -34,12 +38,19 @@ public class DefaultDataLoad {
     private PrivilegeRepository privilegeRepository;
 
     @Autowired
+    private MetaSettingsRepository metaSettingsRepository;
+
+    @Autowired
     private PasswordEncoder passwordEncoder;
 
     private static final String DEFAULT_USER_EMAIL = "test@test.com";
+
+    @Getter
     private static final String SUPER_ADMIN = "SUPER_ADMIN";
     @Getter
     private static final String PASSWORD_PREFIX = "Auto_";
+    @Getter
+    private static final String META_EXP_DATE_KEY = "ExpDate";
 
     @Transactional
     public boolean runDefaultDataLoad() {
@@ -47,6 +58,7 @@ public class DefaultDataLoad {
             log.info("\u001B[32mIs New Super Admin Role Add :{}\u001B[0m", insertSuperAdminRole());
             log.info("\u001B[32mIs New Privileges Found :{}\u001B[0m", insertMissingPrivileges());
             log.info("\u001B[32mIs New Test User Add :{}\u001B[0m", insertTestUser());
+            log.info("\u001B[32mIs Add Exp Date :{}\u001B[0m", insertExpDate());
             return true;
         } catch (Exception e) {
             log.error("Error in Default Data Load: {}", ExceptionUtils.getStackTrace(e));
@@ -54,12 +66,23 @@ public class DefaultDataLoad {
         }
     }
 
+    private boolean insertExpDate() {
+        if(metaSettingsRepository.findByName(META_EXP_DATE_KEY)==null){
+            LocalDateTime localDateTime = LocalDateTime.now().plusDays(30);
+            log.info("\u001B[32mExp Date not found in DB, Adding: {} : {}\u001B[0m", META_EXP_DATE_KEY,localDateTime);
+            metaSettingsRepository.save(MetaSettings.builder().name(META_EXP_DATE_KEY).date(localDateTime).type(MetadataTypes.DATE_TIME).build());
+            return true;
+        }
+        log.info("\u001B[32mExp Date Already Exists in DB, Skipping...\u001B[0m");
+        return false;
+    }
+
     @Transactional
     private boolean insertMissingPrivileges() {
-        Role role = roleRepository.findByName(SUPER_ADMIN);
+
         List<Privilege> privilegeList = privilegeRepository.findAll();
         List<String> privilegeListFromFile = privilegeListConfig.getPrivilegeList();
-        List<String> newPrivilegeNames = new ArrayList<>();
+        List<Privilege> newPrivilege = new ArrayList<>();
         boolean isPrivilegeAdded = false;
         for (String privilege : privilegeListFromFile) {
             if (privilegeList.stream().noneMatch(p -> p.getName().equals(privilege))) {
@@ -67,15 +90,18 @@ public class DefaultDataLoad {
                 Privilege privilegeObj = new Privilege(privilege);
                 privilegeRepository.save(privilegeObj);
                 log.info("\u001B[32mif{}\u001B[0m",privilegeObj.getId());
-                if(role.getPrivileges()==null){
-                    role.setPrivileges(new ArrayList<>());
-                }
-                role.getPrivileges().add(privilegeObj);
+                newPrivilege.add(privilegeObj);
+
                 isPrivilegeAdded = true;
             }
         }
         if (isPrivilegeAdded) {
             log.info("\u001B[32mPrivileges Added Successfully\u001B[0m");
+            Role role = roleRepository.findByName(SUPER_ADMIN);
+            if(role.getPrivileges()==null){
+                role.setPrivileges(new ArrayList<>());
+            }
+            role.getPrivileges().addAll(newPrivilege);
             roleRepository.save(role);
             log.info("\u001B[32mPrivileges Added to Role Successfully\u001B[0m");
         } else {
