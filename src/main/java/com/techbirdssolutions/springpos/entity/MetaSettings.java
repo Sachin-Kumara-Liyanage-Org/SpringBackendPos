@@ -2,10 +2,7 @@ package com.techbirdssolutions.springpos.entity;
 
 import com.techbirdssolutions.springpos.entity.customenum.MetadataTypes;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
@@ -14,6 +11,7 @@ import java.time.LocalDateTime;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@EqualsAndHashCode(callSuper=false)
 public class MetaSettings extends Auditable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,6 +19,7 @@ public class MetaSettings extends Auditable{
     @Column(unique = true)
     private String name;
     @Enumerated(EnumType.STRING)
+    @Builder.Default
     private MetadataTypes type = MetadataTypes.STRING;
     private String string;
     private boolean bool;

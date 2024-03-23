@@ -11,20 +11,17 @@ import java.util.Collection;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper=false)
-public class Privilege{
+public class PrivilegeCategory{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @Column(unique = true)
     private String name;
 
-    @ManyToOne
-    @JoinColumn(name = "privilege_category_id")
-    private PrivilegeCategory privilegeCategory;
+    @OneToMany(mappedBy = "privilegeCategory")
+    private Collection<Privilege> privileges;
 
-    private boolean superAdminOnly;
 
-    @ManyToMany(mappedBy = "privileges", cascade = CascadeType.ALL)
-    private Collection<Role> roles;
 }

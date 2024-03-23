@@ -1,14 +1,8 @@
 package com.techbirdssolutions.springpos.config;
-import com.techbirdssolutions.springpos.entity.MetaSettings;
+import com.techbirdssolutions.springpos.entity.*;
 import com.techbirdssolutions.springpos.entity.customenum.MetadataTypes;
-import com.techbirdssolutions.springpos.repository.MetaSettingsRepository;
+import com.techbirdssolutions.springpos.repository.*;
 import org.springframework.transaction.annotation.Transactional;
-import com.techbirdssolutions.springpos.entity.Privilege;
-import com.techbirdssolutions.springpos.entity.Role;
-import com.techbirdssolutions.springpos.entity.User;
-import com.techbirdssolutions.springpos.repository.PrivilegeRepository;
-import com.techbirdssolutions.springpos.repository.RoleRepository;
-import com.techbirdssolutions.springpos.repository.UserRepository;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.exception.ExceptionUtils;
@@ -17,10 +11,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 
 @Component
 @Slf4j
@@ -36,6 +27,8 @@ public class DefaultDataLoad {
     private RoleRepository roleRepository;
     @Autowired
     private PrivilegeRepository privilegeRepository;
+    @Autowired
+    private PrivilegeCategoryRepository privilegeCategoryRepository;
 
     @Autowired
     private MetaSettingsRepository metaSettingsRepository;
@@ -52,18 +45,65 @@ public class DefaultDataLoad {
     @Getter
     private static final String META_EXP_DATE_KEY = "ExpDate";
 
+    private Map<String,PrivilegeCategory> privilegeCategoryMap;
+
     @Transactional
     public boolean runDefaultDataLoad() {
+        privilegeCategoryMap = new HashMap<>();
         try {
             log.info("\u001B[32mIs New Super Admin Role Add :{}\u001B[0m", insertSuperAdminRole());
+            log.info("\u001B[32mIs New Privileges category Found :{}\u001B[0m", insertMissingPrivilegesCategory());
             log.info("\u001B[32mIs New Privileges Found :{}\u001B[0m", insertMissingPrivileges());
             log.info("\u001B[32mIs New Test User Add :{}\u001B[0m", insertTestUser());
             log.info("\u001B[32mIs Add Exp Date :{}\u001B[0m", insertExpDate());
+            log.info("\u001B[32mIs Remove Old Data :{}\u001B[0m", removeOldPrivileges());
             return true;
         } catch (Exception e) {
             log.error("Error in Default Data Load: {}", ExceptionUtils.getStackTrace(e));
             return false;
         }
+    }
+
+    private boolean removeOldPrivileges() {
+        List<Privilege> privilegeList = privilegeRepository.findByNameNotIn(privilegeListConfig.getPrivilegeNameList());
+        List<PrivilegeCategory> privilegeCategoryList = privilegeCategoryRepository.findByNameNotIn(privilegeListConfig.getPrivilegeCategoryList().stream().toList());
+        boolean isPrivilegeRemoved = false;
+        if(privilegeList.size()>0){
+            log.info("\u001B[33mRemoving Old Privileges: {}\u001B[0m",privilegeList.size());
+            for(Privilege privilege:privilegeList){
+                for(Role role:privilege.getRoles()){
+                    role.getPrivileges().remove(privilege);
+                    roleRepository.save(role);
+                }
+                privilege.getRoles().clear();
+            }
+            privilegeRepository.deleteAll(privilegeList);
+            isPrivilegeRemoved = true;
+        }
+        if(privilegeCategoryList.size()>0){
+            log.info("\u001B[33mRemoving Old Privileges Category: {}\u001B[0m",privilegeCategoryList.size());
+            privilegeCategoryRepository.deleteAll(privilegeCategoryList);
+            isPrivilegeRemoved = true;
+        }
+        return isPrivilegeRemoved;
+    }
+
+    private boolean insertMissingPrivilegesCategory() {
+        boolean isPrivilegeCategoryAdded = false;
+        List<PrivilegeCategory> privilegeCategoryList = privilegeCategoryRepository.findAll();
+        for(String category:privilegeListConfig.getPrivilegeCategoryList()){
+            if(privilegeCategoryList.stream().noneMatch(p->p.getName().equals(category))){
+                log.info("\u001B[33mPrivilege Category not found in DB, Adding: {}\u001B[0m",category);
+                PrivilegeCategory privilegeCategory = PrivilegeCategory.builder().name(category).privileges(new ArrayList<>()).build();
+                privilegeCategoryRepository.save(privilegeCategory);
+                this.privilegeCategoryMap.put(category,privilegeCategory);
+                isPrivilegeCategoryAdded = true;
+            }else{
+                PrivilegeCategory privilegeCategory = privilegeCategoryRepository.findByName(category);
+                this.privilegeCategoryMap.put(category,privilegeCategory);
+            }
+        }
+        return isPrivilegeCategoryAdded;
     }
 
     private boolean insertExpDate() {
@@ -81,19 +121,34 @@ public class DefaultDataLoad {
     private boolean insertMissingPrivileges() {
 
         List<Privilege> privilegeList = privilegeRepository.findAll();
-        List<String> privilegeListFromFile = privilegeListConfig.getPrivilegeList();
+
+        List<PrivilegeListConfig.PrivilegeCsvRow> privilegeListFromFile = privilegeListConfig.getPrivilegeList();
         List<Privilege> newPrivilege = new ArrayList<>();
+        List<Privilege> oldPrivilege = new ArrayList<>();
         boolean isPrivilegeAdded = false;
-        for (String privilege : privilegeListFromFile) {
-            if (privilegeList.stream().noneMatch(p -> p.getName().equals(privilege))) {
-                log.info("\u001B[33mPrivilege not found in DB, Adding: {}\u001B[0m", privilege);
-                Privilege privilegeObj = new Privilege(privilege);
+        for (PrivilegeListConfig.PrivilegeCsvRow privilege : privilegeListFromFile) {
+            if (privilegeList.stream().noneMatch(p -> p.getName().equals(privilege.getName()))) {
+                log.info("\u001B[33mPrivilege not found in DB, Adding: {},{},{}\u001B[0m", privilege.getName(), privilege.getCategory(), privilege.isSuperAdminOnly());
+                Privilege privilegeObj = Privilege.builder()
+                        .name(privilege.getName())
+                        .privilegeCategory(privilegeCategoryMap.get(privilege.getCategory()))
+                        .superAdminOnly(privilege.isSuperAdminOnly())
+                        .build();
                 privilegeRepository.save(privilegeObj);
                 log.info("\u001B[32mif{}\u001B[0m",privilegeObj.getId());
                 newPrivilege.add(privilegeObj);
 
                 isPrivilegeAdded = true;
+            }else{
+                Privilege privilegeObj = privilegeRepository.findByName(privilege.getName());
+                privilegeObj.setPrivilegeCategory(privilegeCategoryMap.get(privilege.getCategory()));
+                privilegeObj.setSuperAdminOnly(privilege.isSuperAdminOnly());
+                oldPrivilege.add(privilegeObj);
             }
+        }
+        if(oldPrivilege.size()>0){
+            log.info("\u001B[32mUpdating Privileges Already Exists in DB\u001B[0m");
+            privilegeRepository.saveAll(oldPrivilege);
         }
         if (isPrivilegeAdded) {
             log.info("\u001B[32mPrivileges Added Successfully\u001B[0m");
