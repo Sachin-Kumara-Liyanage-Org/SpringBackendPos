@@ -60,7 +60,7 @@ jobs:
     - name: Install MySQL
       run: |
         sudo apt-get update
-        sudo apt-get install mysql-server-5.7
+        sudo apt-get install mariadb-test mariadb-server-10.6
     - name: Set up MySQL environment variables
       run: |
         echo "export MYSQL_USER=${{ secrets.MYSQL_USER }}" >> $GITHUB_ENV
