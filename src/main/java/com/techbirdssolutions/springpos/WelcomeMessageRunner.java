@@ -10,7 +10,11 @@ import org.springframework.stereotype.Component;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+/**
+ * This class implements CommandLineRunner and is responsible for executing specific code at the startup of the application.
+ * It is annotated with @Component to indicate that it's a Spring Bean.
+ * It is also annotated with @Slf4j to provide a Logger instance.
+ */
 @Component
 @Slf4j
 public class WelcomeMessageRunner implements CommandLineRunner {
@@ -20,7 +24,10 @@ public class WelcomeMessageRunner implements CommandLineRunner {
 
     @Autowired
     private CommonConstant commonConstant;
-
+    /**
+     * This method prints a welcome message to the console at the startup of the application.
+     * It uses the Logger instance provided by the @Slf4j annotation to log the message.
+     */
     private void printWelcomeMessage() {
         String separator = "==========================================================================================================";
         String posStr="\u001B[36m" +
@@ -66,12 +73,20 @@ public class WelcomeMessageRunner implements CommandLineRunner {
         log.info("Welcome Message: {}", welcomeMessage);
     }
 
-
+    /**
+     * This method returns the current time as a formatted string.
+     * @return The current time as a formatted string.
+     */
     private String getCurrentTime() {
         SimpleDateFormat sdf = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy");
         return sdf.format(new Date());
     }
-
+    /**
+     * This method is executed at the startup of the application.
+     * It first runs the default data load and then prints the welcome message.
+     * @param args The command line arguments passed to the application.
+     * @throws Exception If an error occurs during the execution of the default data load or the printing of the welcome message.
+     */
     @Override
     public void run(String... args) throws Exception {
         defaultDataLoad.runDefaultDataLoad();

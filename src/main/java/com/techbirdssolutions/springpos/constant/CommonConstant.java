@@ -4,6 +4,11 @@ import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * This class is used to hold the common constants for the application.
+ * It uses the @Value annotation to inject the values from the application properties.
+ * The class also provides a method to check if the current profile is local or external.
+ */
 @Configuration
 @Getter
 public class CommonConstant {
@@ -37,6 +42,13 @@ public class CommonConstant {
     @Value("${spring.jpa.properties.hibernate.format_sql}")
     private String formatSql;
 
+    public static final String UNIQUE_ID_MDC_KEY = "uniqueId";
+
+    /**
+     * This method checks if the current profile is local or external.
+     *
+     * @return true if the profile is local or external; false otherwise
+     */
     public boolean isLocal(){
         return profile.equals("local")||profile.equals("external");
     }

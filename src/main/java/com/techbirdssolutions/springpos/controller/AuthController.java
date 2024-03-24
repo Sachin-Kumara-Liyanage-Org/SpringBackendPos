@@ -11,7 +11,9 @@ import com.techbirdssolutions.springpos.model.response.JwtResponseModel;
 import com.techbirdssolutions.springpos.model.request.RefreshTokenRequestModel;
 import com.techbirdssolutions.springpos.repository.UserRepository;
 import com.techbirdssolutions.springpos.service.AuthenticationService;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.exception.ExceptionUtils;
+import org.slf4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,6 +26,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/auth")
+@Slf4j
 public class AuthController {
 
     @Autowired
@@ -36,6 +39,7 @@ public class AuthController {
                     .success(true)
                     .message("Login successful")
                     .data(authenticationService.authenticateAndGetToken(authRequestModel.getUsername()))
+                    .requestId(MDC.get("uniqueId"))
                     .build(), HttpStatus.OK);
 
         } catch (Exception e) {
@@ -44,6 +48,7 @@ public class AuthController {
                     .success(false)
                     .message(e.getMessage())
                     .data(ExceptionUtils.getStackTrace(e))
+                    .requestId(MDC.get("uniqueId"))
                     .build(), HttpStatus.UNAUTHORIZED);
         }
 
@@ -57,6 +62,7 @@ public class AuthController {
                     .success(true)
                     .message("Token refreshed successfully")
                     .data(authenticationService.refreshToken(refreshTokenRequestModel.getRefreshToken()))
+                    .requestId(MDC.get("uniqueId"))
                     .build(), HttpStatus.OK);
 
         } catch (Exception e) {
@@ -65,6 +71,7 @@ public class AuthController {
                     .success(false)
                     .message(e.getMessage())
                     .data(ExceptionUtils.getStackTrace(e))
+                    .requestId(MDC.get("uniqueId"))
                     .build(), HttpStatus.UNAUTHORIZED);
         }
     }
@@ -76,6 +83,7 @@ public class AuthController {
                     .status(HttpStatus.OK.value())
                     .success(true)
                     .message("Token refreshed successfully")
+                    .requestId(MDC.get("uniqueId"))
                     .build(), HttpStatus.OK);
 
         } catch (Exception e) {
@@ -84,6 +92,7 @@ public class AuthController {
                     .success(false)
                     .message(e.getMessage())
                     .data(ExceptionUtils.getStackTrace(e))
+                    .requestId(MDC.get("uniqueId"))
                     .build(), HttpStatus.UNAUTHORIZED);
         }
     }
@@ -95,6 +104,7 @@ public class AuthController {
                     .status(HttpStatus.OK.value())
                     .success(true)
                     .message("Token refreshed successfully")
+                    .requestId(MDC.get("uniqueId"))
                     .build(), HttpStatus.OK);
 
         } catch (Exception e) {
@@ -103,6 +113,7 @@ public class AuthController {
                     .success(false)
                     .message(e.getMessage())
                     .data(ExceptionUtils.getStackTrace(e))
+                    .requestId(MDC.get("uniqueId"))
                     .build(), HttpStatus.UNAUTHORIZED);
         }
     }
@@ -116,6 +127,7 @@ public class AuthController {
                     .status(HttpStatus.OK.value())
                     .success(true)
                     .message("Logout successful")
+                    .requestId(MDC.get("uniqueId"))
                     .build(), HttpStatus.OK);
         }catch (Exception e) {
             return new ResponseEntity<>(ResponseModel.builder()
@@ -123,6 +135,7 @@ public class AuthController {
                     .success(false)
                     .message(e.getMessage())
                     .data(ExceptionUtils.getStackTrace(e))
+                    .requestId(MDC.get("uniqueId"))
                     .build(), HttpStatus.UNAUTHORIZED);
         }
 

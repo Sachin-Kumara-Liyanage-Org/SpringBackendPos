@@ -19,7 +19,11 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
-
+/**
+ * This service class is responsible for handling authentication related operations.
+ * It uses JwtService for token generation and validation.
+ * It is annotated with @Service to indicate that it's a Spring Service.
+ */
 @Service
 @Slf4j
 public class AuthenticationService {
@@ -37,7 +41,13 @@ public class AuthenticationService {
 
     @Autowired
     private MetaSettingsRepository metaSettingsRepository;
-
+    /**
+     * This method authenticates a user and returns a JWT token.
+     * @param username The username of the user to authenticate.
+     * @return A JwtResponseModel containing the access and refresh tokens.
+     * @throws UserDisabledException If the user is disabled.
+     * @throws LicenseExpiredException If the system license is expired.
+     */
     public JwtResponseModel authenticateAndGetToken(String username) throws UserDisabledException, LicenseExpiredException {
         // 1. Authenticate the user
         UserDetails userDetails = userDetailsService.loadUserByUsername(username);
@@ -48,7 +58,10 @@ public class AuthenticationService {
         log.info("User authenticated successfully: {}",username);
         return this.createToken(username);
     }
-
+    /**
+     * This method checks if the system license is expired.
+     * @return true if the system license is expired, false otherwise.
+     */
     private boolean isExpired() {
         try {
             LocalDateTime expDate = metaSettingsRepository.findByName(CustomMataDataConstant.META_EXP_DATE_KEY).getDate();
@@ -58,7 +71,12 @@ public class AuthenticationService {
         }
         return true;
     }
-
+    /**
+     * This method creates a JWT token for a given username.
+     * @param username The username for which to create the token.
+     * @return A JwtResponseModel containing the access and refresh tokens.
+     * @throws LicenseExpiredException If the system license is expired.
+     */
     private JwtResponseModel createToken(String username) throws LicenseExpiredException {
         if(isExpired()){
             log.warn("System is expired");
@@ -76,14 +94,24 @@ public class AuthenticationService {
         userRepository.save(user);
         return new JwtResponseModel(accessToken, refreshToken);
     }
-
+    /**
+     * This method logs out a user by invalidating their refresh token.
+     * @param token The refresh token of the user to log out.
+     */
     public void logout(String token) {
         User user = userRepository.findByRefreshToken(token);
         user.setRefreshToken(null);
         userRepository.save(user);
         log.info("User logged out successfully: {}",user.getEmail());
     }
-
+    /**
+     * This method refreshes a JWT token.
+     * @param refreshToken The refresh token to refresh.
+     * @return A JwtResponseModel containing the new access and refresh tokens.
+     * @throws InvalidTokenException If the refresh token is invalid.
+     * @throws UserDisabledException If the user is disabled.
+     * @throws LicenseExpiredException If the system license is expired.
+     */
     public JwtResponseModel refreshToken(String refreshToken) throws InvalidTokenException, UserDisabledException, LicenseExpiredException {
         // Extract username from the refresh token
         String username = jwtService.getUsernameFromToken(refreshToken);

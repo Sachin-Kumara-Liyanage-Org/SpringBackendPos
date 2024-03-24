@@ -19,7 +19,12 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-
+/**
+ * This class is used to configure the security settings for the application.
+ * It enables web security and method security, and configures the authentication and authorization rules.
+ * The class uses a JwtAuthFilter for JWT authentication, and a CustomUserDetailsService for user details.
+ * The class also provides beans for the PasswordEncoder, AuthenticationProvider, and AuthenticationManager.
+ */
 @Configuration
 @EnableWebSecurity
 @EnableMethodSecurity
@@ -33,6 +38,15 @@ public class SecurityConfig {
 
     @Autowired
     private CommonConstant commonConstant;
+    /**
+     * Configures the security filter chain.
+     * The method disables CSRF, permits all requests to the login and refresh endpoints, and requires authentication for all other requests.
+     * The method also adds the JwtAuthFilter before the UsernamePasswordAuthenticationFilter.
+     *
+     * @param http the HttpSecurity
+     * @return the SecurityFilterChain
+     * @throws Exception if an error occurs
+     */
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.csrf((csrf) -> csrf.disable())
@@ -50,12 +64,22 @@ public class SecurityConfig {
                 return http.build();
 
     }
-
+    /**
+     * Provides a PasswordEncoder bean.
+     * The method returns a BCryptPasswordEncoder.
+     *
+     * @return the PasswordEncoder
+     */
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
-
+    /**
+     * Provides an AuthenticationProvider bean.
+     * The method returns a DaoAuthenticationProvider with the CustomUserDetailsService and the PasswordEncoder.
+     *
+     * @return the AuthenticationProvider
+     */
     @Bean
     public AuthenticationProvider authenticationProvider() {
         DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
@@ -64,7 +88,14 @@ public class SecurityConfig {
         return authenticationProvider;
 
     }
-
+    /**
+     * Provides an AuthenticationManager bean.
+     * The method returns the AuthenticationManager from the AuthenticationConfiguration.
+     *
+     * @param config the AuthenticationConfiguration
+     * @return the AuthenticationManager
+     * @throws Exception if an error occurs
+     */
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
         return config.getAuthenticationManager();
