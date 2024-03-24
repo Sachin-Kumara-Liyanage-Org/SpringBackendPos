@@ -12,6 +12,6 @@ public interface UserRepository extends JpaRepository<User, Long> {
     User findByEmail(String username);
     User findByRefreshToken(String refreshToken);
 
-    @Query("SELECT CASE WHEN COUNT(u) > 0 THEN true ELSE false END FROM User u JOIN u.roles r WHERE u.email = :email AND r.name = ':roleName'")
+    @Query("SELECT CASE WHEN COUNT(u) > 0 THEN true ELSE false END FROM User u JOIN u.roles r WHERE u.email = :email AND r.name = :roleName")
     boolean existsByEmailAndAdminRole(@Param("email") String email, @Param("roleName") String roleName);
 }

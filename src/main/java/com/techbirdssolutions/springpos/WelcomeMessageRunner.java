@@ -1,6 +1,7 @@
 package com.techbirdssolutions.springpos;
 
 import com.techbirdssolutions.springpos.config.DefaultDataLoad;
+import com.techbirdssolutions.springpos.constant.CommonConstant;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -14,38 +15,11 @@ import java.util.Date;
 @Slf4j
 public class WelcomeMessageRunner implements CommandLineRunner {
 
-    @Value("${spring.profiles.active}")
-    private String profile;
-
-    @Value("${spring.application.name}")
-    private String applicationName;
-
-    @Value("${server.port}")
-    private String serverPort;
-
-    @Value("${server.host:localhost}")
-    private String serverHost;
-
-    @Value("${spring.datasource.host}")
-    private String databaseHost;
-    @Value("${spring.datasource.port}")
-    private String databasePort;
-    @Value("${spring.datasource.dbName}")
-    private String databaseName;
-    @Value("${spring.datasource.url}")
-    private String databaseUrl;
-
-    @Value("${spring.jpa.hibernate.ddl-auto}")
-    private String hibernateType;
-
-    @Value("${spring.jpa.properties.hibernate.show-sql}")
-    private String showSql;
-
-    @Value("${spring.jpa.properties.hibernate.format_sql}")
-    private String formatSql;
-
     @Autowired
     private DefaultDataLoad defaultDataLoad;
+
+    @Autowired
+    private CommonConstant commonConstant;
 
     private void printWelcomeMessage() {
         String separator = "==========================================================================================================";
@@ -74,18 +48,18 @@ public class WelcomeMessageRunner implements CommandLineRunner {
                         "\u001B[35m%s\u001B[0m%n",
                 separator,
                 posStr,
-                applicationName,
-                profile,
-                serverHost,
-                serverPort,
-                databaseHost,
-                databasePort,
-                databaseName,
-                databaseUrl,
-                hibernateType,
-                showSql,
-                formatSql,
-                "http://"+serverHost+":"+serverPort+"/swagger-ui/index.html",
+                commonConstant.getApplicationName(),
+                commonConstant.getProfile(),
+                commonConstant.getServerHost(),
+                commonConstant.getServerPort(),
+                commonConstant.getDatabaseHost(),
+                commonConstant.getDatabasePort(),
+                commonConstant.getDatabaseName(),
+                commonConstant.getDatabaseUrl(),
+                commonConstant.getHibernateType(),
+                commonConstant.getShowSql(),
+                commonConstant.getFormatSql(),
+                "http://"+commonConstant.getServerHost()+":"+commonConstant.getServerPort()+"/swagger-ui/index.html",
                 getCurrentTime(),
                 separator
         );

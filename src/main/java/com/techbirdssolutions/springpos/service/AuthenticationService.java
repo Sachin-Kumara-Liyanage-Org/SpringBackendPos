@@ -2,11 +2,13 @@ package com.techbirdssolutions.springpos.service;
 
 import com.techbirdssolutions.springpos.config.DefaultDataLoad;
 import com.techbirdssolutions.springpos.config.JwtService;
+import com.techbirdssolutions.springpos.constant.CustomMataDataConstant;
+import com.techbirdssolutions.springpos.constant.UserConstant;
 import com.techbirdssolutions.springpos.entity.User;
 import com.techbirdssolutions.springpos.exception.InvalidTokenException;
 import com.techbirdssolutions.springpos.exception.LicenseExpiredException;
 import com.techbirdssolutions.springpos.exception.UserDisabledException;
-import com.techbirdssolutions.springpos.model.JwtResponseModel;
+import com.techbirdssolutions.springpos.model.response.JwtResponseModel;
 import com.techbirdssolutions.springpos.repository.MetaSettingsRepository;
 import com.techbirdssolutions.springpos.repository.UserRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -49,8 +51,8 @@ public class AuthenticationService {
 
     private boolean isExpired() {
         try {
-            LocalDateTime expDate = metaSettingsRepository.findByName(DefaultDataLoad.getMETA_EXP_DATE_KEY()).getDate();
-            return LocalDateTime.now().isBefore(expDate);
+            LocalDateTime expDate = metaSettingsRepository.findByName(CustomMataDataConstant.META_EXP_DATE_KEY).getDate();
+            return LocalDateTime.now().isAfter(expDate);
         } catch (Exception e) {
             log.error("Error while checking system expiry: {}", ExceptionUtils.getStackTrace(e));
         }
@@ -60,8 +62,8 @@ public class AuthenticationService {
     private JwtResponseModel createToken(String username) throws LicenseExpiredException {
         if(isExpired()){
             log.warn("System is expired");
-            boolean isSuperAdmin = userRepository.existsByEmailAndAdminRole(username, DefaultDataLoad.getSUPER_ADMIN());
-            if(!isSuperAdmin){
+            boolean isSuperAdminUser = userRepository.existsByEmailAndAdminRole(username, UserConstant.SUPER_ADMIN);
+            if(Boolean.FALSE.equals(isSuperAdminUser)){
                 log.warn("User is not super admin: {}",username);
                 throw new LicenseExpiredException("System is expired");
             }
@@ -94,7 +96,7 @@ public class AuthenticationService {
             throw new InvalidTokenException("Invalid refresh token");
         }
         User user = userRepository.findByEmail(username);
-        if(user.getRefreshToken().equals(refreshToken)){
+        if(!user.getRefreshToken().equals(refreshToken)){
             log.warn("Mismatch in refresh token for user: {}",username);
             throw new InvalidTokenException("Invalid refresh token");
         }

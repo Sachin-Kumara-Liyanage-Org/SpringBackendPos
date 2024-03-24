@@ -6,10 +6,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
-public class RefreshTokenRequestModel {
-    private String oldToken;
-    private String refreshToken;
+public class ResponseModel {
+    private String message;
+    private Object data;
+    private boolean success;
+    private int status;
 }

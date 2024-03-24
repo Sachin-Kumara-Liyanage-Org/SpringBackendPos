@@ -1,5 +1,3 @@
 name,category,superAdminOnly
 DO_Encrypt,Encryption,true
 DO_Decrypt,Encryption,true
-login,Authentication,false
-logout,Authentication,false

@@ -1,4 +1,4 @@
-package com.techbirdssolutions.springpos.model;
+package com.techbirdssolutions.springpos.model.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,8 +9,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class JwtResponseModel{
-    private String accessToken;
+public class AuthRequestModel {
+    private String username;
+    private String password;
     private String refreshToken;
-
 }

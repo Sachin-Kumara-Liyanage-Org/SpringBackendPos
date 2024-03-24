@@ -1,6 +1,7 @@
 package com.techbirdssolutions.springpos.service;
 
 import com.techbirdssolutions.springpos.config.DefaultDataLoad;
+import com.techbirdssolutions.springpos.constant.UserConstant;
 import com.techbirdssolutions.springpos.entity.Privilege;
 import com.techbirdssolutions.springpos.entity.Role;
 import com.techbirdssolutions.springpos.entity.User;
@@ -44,7 +45,7 @@ public class CustomUserDetailsService implements UserDetailsService {
         }
 
         return new org.springframework.security.core.userdetails.User(
-                user.getEmail(), user.getPassword()==null?null:user.getPassword().replaceAll(DefaultDataLoad.getPASSWORD_PREFIX(),""), user.isEnabled(), true, true,
+                user.getEmail(), user.getPassword()==null?null:user.getPassword().replaceAll(UserConstant.PASSWORD_PREFIX,""), user.isEnabled(), true, true,
                 true, getAuthorities(user.getRoles()));
     }
 

@@ -1,4 +1,7 @@
 package com.techbirdssolutions.springpos.config;
+import com.techbirdssolutions.springpos.constant.CommonConstant;
+import com.techbirdssolutions.springpos.constant.CustomMataDataConstant;
+import com.techbirdssolutions.springpos.constant.UserConstant;
 import com.techbirdssolutions.springpos.entity.*;
 import com.techbirdssolutions.springpos.entity.customenum.MetadataTypes;
 import com.techbirdssolutions.springpos.repository.*;
@@ -36,14 +39,10 @@ public class DefaultDataLoad {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    private static final String DEFAULT_USER_EMAIL = "test@test.com";
+    @Autowired
+    private CommonConstant commonConstant;
 
-    @Getter
-    private static final String SUPER_ADMIN = "SUPER_ADMIN";
-    @Getter
-    private static final String PASSWORD_PREFIX = "Auto_";
-    @Getter
-    private static final String META_EXP_DATE_KEY = "ExpDate";
+
 
     private Map<String,PrivilegeCategory> privilegeCategoryMap;
 
@@ -68,13 +67,16 @@ public class DefaultDataLoad {
         List<Privilege> privilegeList = privilegeRepository.findByNameNotIn(privilegeListConfig.getPrivilegeNameList());
         List<PrivilegeCategory> privilegeCategoryList = privilegeCategoryRepository.findByNameNotIn(privilegeListConfig.getPrivilegeCategoryList().stream().toList());
         boolean isPrivilegeRemoved = false;
+
         if(privilegeList.size()>0){
             log.info("\u001B[33mRemoving Old Privileges: {}\u001B[0m",privilegeList.size());
             for(Privilege privilege:privilegeList){
                 for(Role role:privilege.getRoles()){
+                    log.info("\u001B[33mRemoving {} access from role {}\u001B[0m",privilege.getName(),role.getName());
                     role.getPrivileges().remove(privilege);
                     roleRepository.save(role);
                 }
+                log.info("\u001B[33mRemoving Privilege Name:{}\u001B[0m",privilege.getName());
                 privilege.getRoles().clear();
             }
             privilegeRepository.deleteAll(privilegeList);
@@ -107,10 +109,17 @@ public class DefaultDataLoad {
     }
 
     private boolean insertExpDate() {
-        if(metaSettingsRepository.findByName(META_EXP_DATE_KEY)==null){
+        MetaSettings metaSettings = metaSettingsRepository.findByName(CustomMataDataConstant.META_EXP_DATE_KEY);
+        if(metaSettings ==null){
             LocalDateTime localDateTime = LocalDateTime.now().plusDays(30);
-            log.info("\u001B[32mExp Date not found in DB, Adding: {} : {}\u001B[0m", META_EXP_DATE_KEY,localDateTime);
-            metaSettingsRepository.save(MetaSettings.builder().name(META_EXP_DATE_KEY).date(localDateTime).type(MetadataTypes.DATE_TIME).build());
+            log.info("\u001B[32mExp Date not found in DB, Adding: {} : {}\u001B[0m", CustomMataDataConstant.META_EXP_DATE_KEY,localDateTime);
+            metaSettingsRepository.save(MetaSettings.builder().name(CustomMataDataConstant.META_EXP_DATE_KEY).date(localDateTime).type(MetadataTypes.DATE_TIME).build());
+            return true;
+        }else if(Boolean.TRUE.equals(commonConstant.isLocal())){
+            LocalDateTime localDateTime = LocalDateTime.now().plusDays(30);
+            log.info("\u001B[32mExp Date found in DB and {} profile running So Updating: {} : {}\u001B[0m", commonConstant.getProfile(),CustomMataDataConstant.META_EXP_DATE_KEY,localDateTime);
+            metaSettings.setDate(localDateTime);
+            metaSettingsRepository.save(metaSettings);
             return true;
         }
         log.info("\u001B[32mExp Date Already Exists in DB, Skipping...\u001B[0m");
@@ -152,7 +161,7 @@ public class DefaultDataLoad {
         }
         if (isPrivilegeAdded) {
             log.info("\u001B[32mPrivileges Added Successfully\u001B[0m");
-            Role role = roleRepository.findByName(SUPER_ADMIN);
+            Role role = roleRepository.findByName(UserConstant.SUPER_ADMIN);
             if(role.getPrivileges()==null){
                 role.setPrivileges(new ArrayList<>());
             }
@@ -166,9 +175,9 @@ public class DefaultDataLoad {
     }
     @Transactional
     private boolean insertSuperAdminRole() {
-        if (roleRepository.findByName(SUPER_ADMIN) == null) {
+        if (roleRepository.findByName(UserConstant.SUPER_ADMIN) == null) {
             log.info("\u001B[32mSuper Admin Role not found in DB, Added Successfully\u001B[32m");
-            roleRepository.save(new Role(SUPER_ADMIN));
+            roleRepository.save(new Role(UserConstant.SUPER_ADMIN));
             return true;
         }
         log.info("\u001B[32mSuper Admin Role Already Exists in DB, Skipping...\u001B[32m");
@@ -176,34 +185,34 @@ public class DefaultDataLoad {
     }
     @Transactional
     private boolean insertTestUser() {
-        Role role = roleRepository.findByName(SUPER_ADMIN);
-        User user = userRepository.findByEmail(DEFAULT_USER_EMAIL);
+        Role role = roleRepository.findByName(UserConstant.SUPER_ADMIN);
+        User user = userRepository.findByEmail(UserConstant.DEFAULT_USER_EMAIL);
         String password = UUID.randomUUID().toString();
         boolean isUserAdded = false;
         if (user == null) {
             log.info("Test User not found in DB, Adding");
             user = new User();
-            user.setEmail(DEFAULT_USER_EMAIL);
-            user.setPassword(PASSWORD_PREFIX + passwordEncoder.encode(password));
+            user.setEmail(UserConstant.DEFAULT_USER_EMAIL);
+            user.setPassword(UserConstant.PASSWORD_PREFIX + passwordEncoder.encode(password));
             user.setFirstName("Test");
             user.setLastName("Test");
             user.setRoles(List.of(role));
             user.setEnabled(true);
             userRepository.save(user);
             log.warn("\u001B[31m New Test User Added with \n{\n\tEmail:{}\n\tPassword: {}\n}\u001B[0m",
-                    DEFAULT_USER_EMAIL, password);
+                    UserConstant.DEFAULT_USER_EMAIL, password);
             isUserAdded = true;
         } else if (user.getPassword() == null || user.getPassword().isEmpty()
-                || user.getPassword().startsWith(PASSWORD_PREFIX)) {
+                || user.getPassword().startsWith(UserConstant.PASSWORD_PREFIX)) {
             log.info("\u001B[33mTest User found in DB with default password, Changing Password\u001B[0m");
-            user.setPassword(PASSWORD_PREFIX + passwordEncoder.encode(password));
+            user.setPassword(UserConstant.PASSWORD_PREFIX + passwordEncoder.encode(password));
             userRepository.save(user);
             log.warn("\u001B[31m Test User Updated with \n{\n\tEmail:{}\n\tPassword: {}\n}\u001B[0m",
-                    DEFAULT_USER_EMAIL, password);
+                    UserConstant.DEFAULT_USER_EMAIL, password);
             isUserAdded = true;
         }
         if (isUserAdded) {
-            log.warn("\u001B[31m Please change the password for the user: {}\u001B[0m", DEFAULT_USER_EMAIL);
+            log.warn("\u001B[31m Please change the password for the user: {}\u001B[0m", UserConstant.DEFAULT_USER_EMAIL);
         } else {
             log.info("\u001B[32m Test User already exists in DB with Custom Password, Skipping...\u001B[0m");
         }

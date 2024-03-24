@@ -1,4 +1,4 @@
-package com.techbirdssolutions.springpos.model;
+package com.techbirdssolutions.springpos.model.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class AuthRequestModel {
-    private String username;
-    private String password;
+public class RefreshTokenRequestModel {
+    private String currentToken;
+    private String refreshToken;
 }

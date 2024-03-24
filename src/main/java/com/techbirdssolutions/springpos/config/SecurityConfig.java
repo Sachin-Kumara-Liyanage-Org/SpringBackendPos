@@ -1,5 +1,6 @@
 package com.techbirdssolutions.springpos.config;
 
+import com.techbirdssolutions.springpos.constant.CommonConstant;
 import com.techbirdssolutions.springpos.service.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -29,19 +30,19 @@ public class SecurityConfig {
 
     @Autowired
     CustomUserDetailsService customUserDetailsService;
-    @Value("${spring.profiles.active}")
-    private String profile;
 
+    @Autowired
+    private CommonConstant commonConstant;
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.csrf((csrf) -> csrf.disable())
                 .authorizeHttpRequests((authorizeHttpRequests) -> authorizeHttpRequests
-                        .requestMatchers("/api/auth/**").permitAll())
+                        .requestMatchers("/api/auth/login","/api/auth/refresh","/api/auth/password/reset").permitAll())
                 .sessionManagement(
                         (sessionManagement) -> sessionManagement.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .addFilterBefore(jwtAuthFilter,UsernamePasswordAuthenticationFilter.class);
 
-                if(profile.equals("local")||profile.equals("external")){
+                if(Boolean.TRUE.equals(commonConstant.isLocal())){
                     http.authorizeHttpRequests((authorizeHttpRequests) ->
                             authorizeHttpRequests.requestMatchers("/swagger-ui/**","/v3/api-docs/**").permitAll());
                 }
