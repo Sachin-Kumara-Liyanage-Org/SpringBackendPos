@@ -36,4 +36,6 @@ build/
 
 ### ignore log files###
 *.log
+*.log.*
 logs/
+.env

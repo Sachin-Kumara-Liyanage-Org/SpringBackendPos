@@ -8,17 +8,27 @@ import com.techbirdssolutions.springpos.entity.User;
 import com.techbirdssolutions.springpos.exception.InvalidTokenException;
 import com.techbirdssolutions.springpos.exception.LicenseExpiredException;
 import com.techbirdssolutions.springpos.exception.UserDisabledException;
+import com.techbirdssolutions.springpos.model.custom.EmailData;
+import com.techbirdssolutions.springpos.model.request.PasswordChangeRequest;
+import com.techbirdssolutions.springpos.model.request.PasswordResetRequest;
 import com.techbirdssolutions.springpos.model.response.JwtResponseModel;
 import com.techbirdssolutions.springpos.repository.MetaSettingsRepository;
 import com.techbirdssolutions.springpos.repository.UserRepository;
+import com.techbirdssolutions.springpos.util.EmailUtil;
+import jakarta.mail.MessagingException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.io.UnsupportedEncodingException;
 import java.time.LocalDateTime;
+import java.util.List;
+
 /**
  * This service class is responsible for handling authentication related operations.
  * It uses JwtService for token generation and validation.
@@ -41,6 +51,12 @@ public class AuthenticationService {
 
     @Autowired
     private MetaSettingsRepository metaSettingsRepository;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
+    @Autowired
+    private EmailUtil emailUtil;
     /**
      * This method authenticates a user and returns a JWT token.
      * @param username The username of the user to authenticate.
@@ -92,7 +108,7 @@ public class AuthenticationService {
         User user = userRepository.findByEmail(username);
         user.setRefreshToken(refreshToken);
         userRepository.save(user);
-        return new JwtResponseModel(accessToken, refreshToken);
+        return new JwtResponseModel(accessToken, refreshToken,username);
     }
     /**
      * This method logs out a user by invalidating their refresh token.
@@ -129,6 +145,49 @@ public class AuthenticationService {
             throw new InvalidTokenException("Invalid refresh token");
         }
         log.info("Refresh token validated successfully for user: {}",username);
+        return this.authenticateAndGetToken(username);
+    }
+
+    public JwtResponseModel sendPasswordResetToken(PasswordResetRequest passwordResetRequest) throws MessagingException, UnsupportedEncodingException {
+        User user = userRepository.findByEmail(passwordResetRequest.getEmail());
+        if(user==null){
+            log.warn("User not found: {}",passwordResetRequest.getEmail());
+            throw new UsernameNotFoundException("User not found");
+        }
+        String refreshToken = jwtService.generateRefreshToken(passwordResetRequest.getEmail());
+        user.setRefreshToken(refreshToken);
+        userRepository.save(user);
+        emailUtil.sendEmail(createPasswordResetEmailData(passwordResetRequest.getEmail(),refreshToken,passwordResetRequest));
+        return new JwtResponseModel(null, refreshToken,passwordResetRequest.getEmail());
+    }
+
+    private EmailData createPasswordResetEmailData(String email, String token,PasswordResetRequest passwordResetRequest) {
+        EmailData emailData = new EmailData();
+        emailData.setTo(List.of(email));
+        emailData.setSubject("Password Reset Request");
+        String link = (""+passwordResetRequest.getCallbackUrl()).replace(passwordResetRequest.getPlaceholder(), token);
+        emailData.setBody("Please click the link below to reset your password: <br/>"
+                + "<a href=\""+link+"\">Reset Password</a>");
+        emailData.setHtml(true);
+        return emailData;
+    }
+
+    public JwtResponseModel resetPassword(PasswordChangeRequest passwordResetRequest) throws InvalidTokenException, LicenseExpiredException, UserDisabledException {
+        String username = jwtService.getUsernameFromToken(passwordResetRequest.getToken());
+        UserDetails userDetails = userDetailsService.loadUserByUsername(username);
+        if (!jwtService.validateToken(passwordResetRequest.getToken(),userDetails)) {
+            log.warn("Failed to validate token for user: {}",username);
+            throw new InvalidTokenException("Invalid Password Change token");
+        }
+        User user = userRepository.findByEmail(username);
+        if(!user.getRefreshToken().equals(passwordResetRequest.getToken())){
+            log.warn("Mismatch in Password Change token for user: {}",username);
+            throw new InvalidTokenException("Invalid Password Change token");
+        }
+
+        user.setPassword(passwordEncoder.encode(passwordResetRequest.getNewPassword()));
+        user.setRefreshToken(null);
+        userRepository.save(user);
         return this.authenticateAndGetToken(username);
     }
 }

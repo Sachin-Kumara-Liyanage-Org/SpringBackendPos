@@ -22,6 +22,21 @@ spring:
     username: ENC(g+TFDbW46ph9Po+fg4BwzQ==)
     password: ENC(g+TFDbW46ph9Po+fg4BwzQ==)
     driver-class-name: "com.mysql.cj.jdbc.Driver"
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: techbirdssolutions2024@gmail.com
+    personal: "TechBirds Solutions"
+    password: ${EMAIL_PASSWORD}
+    properties:
+      mail:
+        debug: true
+        transport:
+          protocol: smtp
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 settings:
   privilegeListFilePath: "classpath:static/PrivilegeList.csv"
 jwt:

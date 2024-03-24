@@ -23,4 +23,6 @@ public class JwtResponseModel{
      */
     private String refreshToken;
 
+    private String email;
+
 }
