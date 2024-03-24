@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: false
+        show_sql: true
+  datasource:
+    host: localhost
+    port: 3306
+    dbName: ENC(2DlHJioLBSV8w/DMhag+QVwm4nzJZsYd)
+    url: "jdbc:mysql://${spring.datasource.host}:${spring.datasource.port}/${spring.datasource.dbName}?createDatabaseIfNotExist=true"
+    username: ${MYSQL_USER}
+    password: ${MYSQL_PASSWORD}
+    driver-class-name: "com.mysql.cj.jdbc.Driver"

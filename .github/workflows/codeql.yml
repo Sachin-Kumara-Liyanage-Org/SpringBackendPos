@@ -67,9 +67,9 @@ jobs:
         echo "export MYSQL_PASSWORD=${{ secrets.MYSQL_PASSWORD }}" >> $GITHUB_ENV
     - name: Build with Maven
       env:
-          Profile: git
-          MYSQL_USER: ${{ secrets.MYSQL_USER }}
-          MYSQL_PASSWORD: ${{ secrets.MYSQL_PASSWORD }}
+        PROFILE: git
+        MYSQL_USER: ${{ secrets.MYSQL_USER }}
+        MYSQL_PASSWORD: ${{ secrets.MYSQL_PASSWORD }}
       run: mvn -B package --file pom.xml
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
