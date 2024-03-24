@@ -8,6 +8,8 @@ import com.techbirdssolutions.springpos.exception.LicenseExpiredException;
 import com.techbirdssolutions.springpos.exception.UserDisabledException;
 import com.techbirdssolutions.springpos.model.ResponseModel;
 import com.techbirdssolutions.springpos.model.request.AuthRequestModel;
+import com.techbirdssolutions.springpos.model.request.PasswordChangeRequest;
+import com.techbirdssolutions.springpos.model.request.PasswordResetRequest;
 import com.techbirdssolutions.springpos.model.response.JwtResponseModel;
 import com.techbirdssolutions.springpos.model.request.RefreshTokenRequestModel;
 import com.techbirdssolutions.springpos.repository.UserRepository;
@@ -77,13 +79,14 @@ public class AuthController {
         }
     }
 
-    @GetMapping("/password/reset")
-    public ResponseEntity<ResponseModel> sendPasswordReset(@RequestParam String email){
+    @PostMapping("/password/reset/request")
+    public ResponseEntity<ResponseModel> sendPasswordReset(@RequestBody PasswordResetRequest passwordResetRequest){
         try{
             return new ResponseEntity<>(ResponseModel.builder()
                     .status(HttpStatus.OK.value())
                     .success(true)
-                    .message("Token refreshed successfully")
+                    .message("Password reset token sent successfully")
+                    .data(authenticationService.sendPasswordResetToken(passwordResetRequest))
                     .requestId(MDC.get(CommonConstant.UNIQUE_ID_MDC_KEY))
                     .build(), HttpStatus.OK);
 
@@ -98,14 +101,15 @@ public class AuthController {
         }
     }
 
-    @PostMapping("/password/reset")
-    public ResponseEntity<ResponseModel> sendPasswordReset(@RequestBody AuthRequestModel authRequestModel){
+    @PostMapping("/password/reset/confirm")
+    public ResponseEntity<ResponseModel> sendPasswordReset(@RequestBody PasswordChangeRequest passwordChangeRequest){
         try{
             return new ResponseEntity<>(ResponseModel.builder()
                     .status(HttpStatus.OK.value())
                     .success(true)
-                    .message("Token refreshed successfully")
+                    .message("Password reset successful")
                     .requestId(MDC.get(CommonConstant.UNIQUE_ID_MDC_KEY))
+                    .data(authenticationService.resetPassword(passwordChangeRequest))
                     .build(), HttpStatus.OK);
 
         } catch (Exception e) {
