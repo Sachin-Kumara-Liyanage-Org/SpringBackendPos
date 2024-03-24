@@ -88,7 +88,7 @@ public class DefaultDataLoad {
         List<PrivilegeCategory> privilegeCategoryList = privilegeCategoryRepository.findByNameNotIn(privilegeListConfig.getPrivilegeCategoryList().stream().toList());
         boolean isPrivilegeRemoved = false;
 
-        if(privilegeList.size()>0){
+        if(!privilegeList.isEmpty()){
             log.info("\u001B[33mRemoving Old Privileges: {}\u001B[0m",privilegeList.size());
             for(Privilege privilege:privilegeList){
                 for(Role role:privilege.getRoles()){
@@ -102,7 +102,7 @@ public class DefaultDataLoad {
             privilegeRepository.deleteAll(privilegeList);
             isPrivilegeRemoved = true;
         }
-        if(privilegeCategoryList.size()>0){
+        if(!privilegeCategoryList.isEmpty()){
             log.info("\u001B[33mRemoving Old Privileges Category: {}\u001B[0m",privilegeCategoryList.size());
             privilegeCategoryRepository.deleteAll(privilegeCategoryList);
             isPrivilegeRemoved = true;
@@ -208,7 +208,7 @@ public class DefaultDataLoad {
                 oldPrivilege.add(privilegeObj);
             }
         }
-        if(oldPrivilege.size()>0){
+        if(!oldPrivilege.isEmpty()){
             log.info("\u001B[32mUpdating Privileges Already Exists in DB\u001B[0m");
             privilegeRepository.saveAll(oldPrivilege);
         }
