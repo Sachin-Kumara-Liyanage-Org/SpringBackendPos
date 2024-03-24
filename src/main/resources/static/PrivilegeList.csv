@@ -1,2 +1,3 @@
-DO_Encrypt
-DO_Decrypt
+name,category,superAdminOnly
+DO_Encrypt,Encryption,true
+DO_Decrypt,Encryption,true
