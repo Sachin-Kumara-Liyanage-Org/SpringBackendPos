@@ -15,7 +15,12 @@ import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 import java.util.*;
-
+/**
+ * DefaultDataLoad is a component class that is responsible for loading default data into the application.
+ * It is annotated with @Component to indicate that an instance of this class will be created at startup.
+ * It is also annotated with @Slf4j to enable logging.
+ * The class is marked as @Transactional, meaning that the methods within this class will be wrapped in a transaction.
+ */
 @Component
 @Slf4j
 @Transactional
@@ -45,7 +50,13 @@ public class DefaultDataLoad {
 
 
     private Map<String,PrivilegeCategory> privilegeCategoryMap;
-
+    /**
+     * This method is responsible for running the default data load process.
+     * It logs the success or failure of each step in the process.
+     * If an exception occurs during the process, it is caught and logged, and the method returns false.
+     *
+     * @return a boolean indicating whether the default data load process was successful
+     */
     @Transactional
     public boolean runDefaultDataLoad() {
         privilegeCategoryMap = new HashMap<>();
@@ -62,7 +73,16 @@ public class DefaultDataLoad {
             return false;
         }
     }
-
+    /**
+     * This method is used to remove old privileges and privilege categories from the database.
+     * It first retrieves a list of privileges and privilege categories that are not in the configured list of privileges and categories.
+     * If there are any privileges in the retrieved list, it logs the number of privileges to be removed.
+     * For each privilege in the list, it removes the privilege from each role that has it, and then removes the privilege itself.
+     * If there are any privilege categories in the retrieved list, it logs the number of categories to be removed and then removes them.
+     * The method returns true if any privileges or categories were removed, and false otherwise.
+     *
+     * @return a boolean indicating whether any privileges or categories were removed
+     */
     private boolean removeOldPrivileges() {
         List<Privilege> privilegeList = privilegeRepository.findByNameNotIn(privilegeListConfig.getPrivilegeNameList());
         List<PrivilegeCategory> privilegeCategoryList = privilegeCategoryRepository.findByNameNotIn(privilegeListConfig.getPrivilegeCategoryList().stream().toList());
@@ -89,7 +109,17 @@ public class DefaultDataLoad {
         }
         return isPrivilegeRemoved;
     }
-
+    /**
+     * This method is used to insert missing privilege categories into the database.
+     * It first retrieves a list of all privilege categories from the database.
+     * Then, for each category in the configured list of privilege categories, it checks whether the category exists in the retrieved list.
+     * If a category does not exist in the retrieved list, it logs the category name, creates a new PrivilegeCategory object with the category name,
+     * saves the new PrivilegeCategory object to the database, adds the new PrivilegeCategory object to the privilegeCategoryMap, and sets isPrivilegeCategoryAdded to true.
+     * If a category does exist in the retrieved list, it retrieves the PrivilegeCategory object with the category name from the database and adds it to the privilegeCategoryMap.
+     * The method returns isPrivilegeCategoryAdded, which indicates whether any privilege categories were added.
+     *
+     * @return a boolean indicating whether any privilege categories were added
+     */
     private boolean insertMissingPrivilegesCategory() {
         boolean isPrivilegeCategoryAdded = false;
         List<PrivilegeCategory> privilegeCategoryList = privilegeCategoryRepository.findAll();
@@ -107,7 +137,17 @@ public class DefaultDataLoad {
         }
         return isPrivilegeCategoryAdded;
     }
-
+    /**
+     * This method is used to insert or update the expiration date in the database.
+     * It first retrieves the MetaSettings object with the key CustomMataDataConstant.META_EXP_DATE_KEY from the database.
+     * If the MetaSettings object does not exist, it creates a new LocalDateTime object that is 30 days from now, logs the key and the LocalDateTime object,
+     * creates a new MetaSettings object with the key, the LocalDateTime object, and the type MetadataTypes.DATE_TIME, saves the new MetaSettings object to the database, and returns true.
+     * If the MetaSettings object does exist and the application is running in local mode, it creates a new LocalDateTime object that is 30 days from now, logs the profile, the key, and the LocalDateTime object,
+     * sets the date of the MetaSettings object to the LocalDateTime object, saves the MetaSettings object to the database, and returns true.
+     * If the MetaSettings object does exist and the application is not running in local mode, it logs that the expiration date already exists in the database and returns false.
+     *
+     * @return a boolean indicating whether the expiration date was inserted or updated
+     */
     private boolean insertExpDate() {
         MetaSettings metaSettings = metaSettingsRepository.findByName(CustomMataDataConstant.META_EXP_DATE_KEY);
         if(metaSettings ==null){
@@ -125,7 +165,20 @@ public class DefaultDataLoad {
         log.info("\u001B[32mExp Date Already Exists in DB, Skipping...\u001B[0m");
         return false;
     }
-
+    /**
+     * This method is used to insert missing privileges into the database.
+     * It first retrieves a list of all privileges from the database.
+     * Then, for each privilege in the configured list of privileges, it checks whether the privilege exists in the retrieved list.
+     * If a privilege does not exist in the retrieved list, it logs the privilege name, category, and superAdminOnly status, creates a new Privilege object with the privilege name, category, and superAdminOnly status,
+     * saves the new Privilege object to the database, adds the new Privilege object to the newPrivilege list, and sets isPrivilegeAdded to true.
+     * If a privilege does exist in the retrieved list, it retrieves the Privilege object with the privilege name from the database, sets the privilege category and superAdminOnly status of the Privilege object, and adds the Privilege object to the oldPrivilege list.
+     * If there are any privileges in the oldPrivilege list, it logs that the privileges already exist in the database and updates the privileges in the database.
+     * If isPrivilegeAdded is true, it logs that the privileges were added successfully, retrieves the Role object with the name UserConstant.SUPER_ADMIN from the database, adds the privileges in the newPrivilege list to the Role object, saves the Role object to the database, and logs that the privileges were added to the role successfully.
+     * If isPrivilegeAdded is false, it logs that the privileges already exist in the database and skips the addition of the privileges.
+     * The method returns isPrivilegeAdded, which indicates whether any privileges were added.
+     *
+     * @return a boolean indicating whether any privileges were added
+     */
     @Transactional
     private boolean insertMissingPrivileges() {
 
@@ -173,6 +226,15 @@ public class DefaultDataLoad {
         }
         return isPrivilegeAdded;
     }
+    /**
+     * This method is used to insert the Super Admin role into the database.
+     * It first checks whether the Role object with the name UserConstant.SUPER_ADMIN exists in the database.
+     * If the Role object does not exist, it logs that the Super Admin role was not found in the database and was added successfully,
+     * creates a new Role object with the name UserConstant.SUPER_ADMIN, saves the new Role object to the database, and returns true.
+     * If the Role object does exist, it logs that the Super Admin role already exists in the database and skips the addition of the role, and returns false.
+     *
+     * @return a boolean indicating whether the Super Admin role was added
+     */
     @Transactional
     private boolean insertSuperAdminRole() {
         if (roleRepository.findByName(UserConstant.SUPER_ADMIN) == null) {
@@ -183,6 +245,23 @@ public class DefaultDataLoad {
         log.info("\u001B[32mSuper Admin Role Already Exists in DB, Skipping...\u001B[32m");
         return false;
     }
+
+    /**
+     * This method is used to insert a test user into the database.
+     * It first retrieves the Role object with the name UserConstant.SUPER_ADMIN and the User object with the email UserConstant.DEFAULT_USER_EMAIL from the database.
+     * If the User object does not exist, it logs that the test user was not found in the database and is being added, creates a new User object with the email UserConstant.
+     * DEFAULT_USER_EMAIL, a randomly generated password, the first name "Test", the last name "Test", the Role object, and the enabled status set to true,
+     * saves the new User object to the database, logs the email and password of the new user, and sets isUserAdded to true.
+     * If the User object does exist and the password of the User object is null, empty, or starts with UserConstant.PASSWORD_PREFIX,
+     * it logs that the test user was found in the database with the default password and is changing the password,
+     * sets the password of the User object to a randomly generated password, saves the User object to the database, logs the email and password of the user,
+     * and sets isUserAdded to true.
+     * If isUserAdded is true, it logs a warning to change the password for the user with the email UserConstant.DEFAULT_USER_EMAIL.
+     * If isUserAdded is false, it logs that the test user already exists in the database with a custom password and skips the addition of the user.
+     * The method returns isUserAdded, which indicates whether the test user was added or updated.
+     *
+     * @return a boolean indicating whether the test user was added or updated
+     */
     @Transactional
     private boolean insertTestUser() {
         Role role = roleRepository.findByName(UserConstant.SUPER_ADMIN);
