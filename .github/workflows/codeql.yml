@@ -60,11 +60,15 @@ jobs:
     - name: Install MySQL
       run: |
         sudo apt-get update
-        sudo apt-get install mariadb-test mariadb-server-10.6
+        sudo apt-get install mariadb-server mariadb-client
+        sudo mysql -e "CREATE DATABASE IF NOT EXISTS your_database;"
+        sudo mysql -e "CREATE USER 'git'@'localhost' IDENTIFIED BY 'gitTest';"
+        sudo mysql -e "GRANT ALL PRIVILEGES ON your_database.* TO 'git'@'localhost';"
+        sudo mysql -e "FLUSH PRIVILEGES;"
     - name: Set up MySQL environment variables
       run: |
-        echo "export MYSQL_USER=${{ secrets.MYSQL_USER }}" >> $GITHUB_ENV
-        echo "export MYSQL_PASSWORD=${{ secrets.MYSQL_PASSWORD }}" >> $GITHUB_ENV
+        echo "export MYSQL_USER=git" >> $GITHUB_ENV
+        echo "export MYSQL_PASSWORD=gitTest" >> $GITHUB_ENV
     - name: Build with Maven
       env:
         PROFILE: git
