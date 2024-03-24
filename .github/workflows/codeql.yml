@@ -65,10 +65,6 @@ jobs:
         sudo mysql -e "CREATE USER 'git'@'localhost' IDENTIFIED BY 'gitTest';"
         sudo mysql -e "GRANT ALL PRIVILEGES ON *.* TO 'git'@'localhost';"
         sudo mysql -e "FLUSH PRIVILEGES;"
-    - name: Set up MySQL environment variables
-      run: |
-        echo "export MYSQL_USER=git" >> $GITHUB_ENV
-        echo "export MYSQL_PASSWORD=gitTest" >> $GITHUB_ENV
     - name: Build with Maven
       env:
         PROFILE: git

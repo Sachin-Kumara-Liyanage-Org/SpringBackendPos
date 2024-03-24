@@ -1,5 +1,6 @@
 package com.techbirdssolutions.springpos.controller;
 
+import com.techbirdssolutions.springpos.constant.CommonConstant;
 import com.techbirdssolutions.springpos.model.ResponseModel;
 import com.techbirdssolutions.springpos.service.SettingEncryptorService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -51,7 +52,7 @@ public class EncryptorController {
                     .success(true)
                     .message("encryption successful")
                     .data(settingEncryptorService.encrypt(body.get("data")))
-                    .requestId(MDC.get("uniqueId"))
+                    .requestId(MDC.get(CommonConstant.UNIQUE_ID_MDC_KEY))
                     .build(), HttpStatus.OK);
 
         } catch (Exception e) {
@@ -60,7 +61,7 @@ public class EncryptorController {
                     .success(false)
                     .message(e.getMessage())
                     .data(ExceptionUtils.getStackTrace(e))
-                    .requestId(MDC.get("uniqueId"))
+                    .requestId(MDC.get(CommonConstant.UNIQUE_ID_MDC_KEY))
                     .build(), HttpStatus.FORBIDDEN);
         }
     }
@@ -87,7 +88,7 @@ public class EncryptorController {
                     .success(true)
                     .message("decrypted successfully")
                     .data(settingEncryptorService.decrypt(body.get("data")))
-                    .requestId(MDC.get("uniqueId"))
+                    .requestId(MDC.get(CommonConstant.UNIQUE_ID_MDC_KEY))
                     .build(), HttpStatus.OK);
 
         } catch (Exception e) {
@@ -96,7 +97,7 @@ public class EncryptorController {
                     .success(false)
                     .message(e.getMessage())
                     .data(ExceptionUtils.getStackTrace(e))
-                    .requestId(MDC.get("uniqueId"))
+                    .requestId(MDC.get(CommonConstant.UNIQUE_ID_MDC_KEY))
                     .build(), HttpStatus.FORBIDDEN);
         }
     }

@@ -2,6 +2,7 @@ package com.techbirdssolutions.springpos.controller;
 
 
 import com.techbirdssolutions.springpos.config.JwtService;
+import com.techbirdssolutions.springpos.constant.CommonConstant;
 import com.techbirdssolutions.springpos.exception.InvalidTokenException;
 import com.techbirdssolutions.springpos.exception.LicenseExpiredException;
 import com.techbirdssolutions.springpos.exception.UserDisabledException;
@@ -39,7 +40,7 @@ public class AuthController {
                     .success(true)
                     .message("Login successful")
                     .data(authenticationService.authenticateAndGetToken(authRequestModel.getUsername()))
-                    .requestId(MDC.get("uniqueId"))
+                    .requestId(MDC.get(CommonConstant.UNIQUE_ID_MDC_KEY))
                     .build(), HttpStatus.OK);
 
         } catch (Exception e) {
@@ -48,7 +49,7 @@ public class AuthController {
                     .success(false)
                     .message(e.getMessage())
                     .data(ExceptionUtils.getStackTrace(e))
-                    .requestId(MDC.get("uniqueId"))
+                    .requestId(MDC.get(CommonConstant.UNIQUE_ID_MDC_KEY))
                     .build(), HttpStatus.UNAUTHORIZED);
         }
 
@@ -62,7 +63,7 @@ public class AuthController {
                     .success(true)
                     .message("Token refreshed successfully")
                     .data(authenticationService.refreshToken(refreshTokenRequestModel.getRefreshToken()))
-                    .requestId(MDC.get("uniqueId"))
+                    .requestId(MDC.get(CommonConstant.UNIQUE_ID_MDC_KEY))
                     .build(), HttpStatus.OK);
 
         } catch (Exception e) {
@@ -71,7 +72,7 @@ public class AuthController {
                     .success(false)
                     .message(e.getMessage())
                     .data(ExceptionUtils.getStackTrace(e))
-                    .requestId(MDC.get("uniqueId"))
+                    .requestId(MDC.get(CommonConstant.UNIQUE_ID_MDC_KEY))
                     .build(), HttpStatus.UNAUTHORIZED);
         }
     }
@@ -83,7 +84,7 @@ public class AuthController {
                     .status(HttpStatus.OK.value())
                     .success(true)
                     .message("Token refreshed successfully")
-                    .requestId(MDC.get("uniqueId"))
+                    .requestId(MDC.get(CommonConstant.UNIQUE_ID_MDC_KEY))
                     .build(), HttpStatus.OK);
 
         } catch (Exception e) {
@@ -92,7 +93,7 @@ public class AuthController {
                     .success(false)
                     .message(e.getMessage())
                     .data(ExceptionUtils.getStackTrace(e))
-                    .requestId(MDC.get("uniqueId"))
+                    .requestId(MDC.get(CommonConstant.UNIQUE_ID_MDC_KEY))
                     .build(), HttpStatus.UNAUTHORIZED);
         }
     }
@@ -104,7 +105,7 @@ public class AuthController {
                     .status(HttpStatus.OK.value())
                     .success(true)
                     .message("Token refreshed successfully")
-                    .requestId(MDC.get("uniqueId"))
+                    .requestId(MDC.get(CommonConstant.UNIQUE_ID_MDC_KEY))
                     .build(), HttpStatus.OK);
 
         } catch (Exception e) {
@@ -113,7 +114,7 @@ public class AuthController {
                     .success(false)
                     .message(e.getMessage())
                     .data(ExceptionUtils.getStackTrace(e))
-                    .requestId(MDC.get("uniqueId"))
+                    .requestId(MDC.get(CommonConstant.UNIQUE_ID_MDC_KEY))
                     .build(), HttpStatus.UNAUTHORIZED);
         }
     }
@@ -127,7 +128,7 @@ public class AuthController {
                     .status(HttpStatus.OK.value())
                     .success(true)
                     .message("Logout successful")
-                    .requestId(MDC.get("uniqueId"))
+                    .requestId(MDC.get(CommonConstant.UNIQUE_ID_MDC_KEY))
                     .build(), HttpStatus.OK);
         }catch (Exception e) {
             return new ResponseEntity<>(ResponseModel.builder()
@@ -135,7 +136,7 @@ public class AuthController {
                     .success(false)
                     .message(e.getMessage())
                     .data(ExceptionUtils.getStackTrace(e))
-                    .requestId(MDC.get("uniqueId"))
+                    .requestId(MDC.get(CommonConstant.UNIQUE_ID_MDC_KEY))
                     .build(), HttpStatus.UNAUTHORIZED);
         }
 
