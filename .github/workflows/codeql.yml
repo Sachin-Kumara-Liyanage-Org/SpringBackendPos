@@ -57,7 +57,19 @@ jobs:
         distribution: 'oracle'
         java-version: '21'
         cache: 'maven'
+    - name: Install MySQL
+      run: |
+        sudo apt-get update
+        sudo apt-get install mysql-server-5.7
+    - name: Set up MySQL environment variables
+      run: |
+        echo "export MYSQL_USER=${{ secrets.MYSQL_USER }}" >> $GITHUB_ENV
+        echo "export MYSQL_PASSWORD=${{ secrets.MYSQL_PASSWORD }}" >> $GITHUB_ENV
     - name: Build with Maven
+      env:
+          Profile: git
+          MYSQL_USER: ${{ secrets.MYSQL_USER }}
+          MYSQL_PASSWORD: ${{ secrets.MYSQL_PASSWORD }}
       run: mvn -B package --file pom.xml
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
