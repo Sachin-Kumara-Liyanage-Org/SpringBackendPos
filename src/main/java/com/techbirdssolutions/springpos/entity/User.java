@@ -50,6 +50,10 @@ public class User extends Auditable{
      */
     private String refreshToken;
     /**
+     * The password reset token of the User entity.
+     */
+    private String passwordResetToken;
+    /**
      * The password of the User entity.
      */
     private String password;

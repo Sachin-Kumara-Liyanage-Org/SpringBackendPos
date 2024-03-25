@@ -39,26 +39,40 @@ public class WelcomeMessageRunner implements CommandLineRunner {
                 "%n\u001B[35m%s\u001B[0m%n" +
                         "%s%n" +
                         "\u001B[34m                  \uD83D\uDE0AWelcome to %s!\uD83D\uDE0A\u001B[0m%n"+
-                        "\u001B[32m ✔ \u001B[0m Your current profile is: \u001B[36m%s\u001B[0m%n" +
-                        "\u001B[32m ✔ \u001B[0m Your current server Host is: \u001B[36m%s\u001B[0m%n" +
-                        "\u001B[32m ✔ \u001B[0m Your current server port is: \u001B[36m%s\u001B[0m%n" +
-                        "\u001B[32m ✔ \u001B[0m Your current database Host is: \u001B[36m%s\u001B[0m%n" +
-                        "\u001B[32m ✔ \u001B[0m Your current database Port is: \u001B[36m%s\u001B[0m%n" +
-                        "\u001B[32m ✔ \u001B[0m Your current database Name is: \u001B[36m%s\u001B[0m%n" +
-                        "\u001B[32m ✔ \u001B[0m Your current database Url is: \u001B[36m%s\u001B[0m%n" +
-                        "\u001B[32m ✔ \u001B[0m Your current hibernate ddl-auto is: \u001B[36m%s\u001B[0m%n" +
-                        "\u001B[32m ✔ \u001B[0m Your current show sql is: \u001B[36m%s\u001B[0m%n" +
-                        "\u001B[32m ✔ \u001B[0m Your current format sql is: \u001B[36m%s\u001B[0m%n" +
-                        "\u001B[32m ✔ \u001B[0m Your current swagger-ui Url is: \u001B[36m%s\u001B[0m%n" +
+                        "\t\t \u001B[31m ★ \u001B[33m%s\u001B[0m%n" +
+                        "\u001B[32m ✔ \u001B[0m Host: \u001B[36m%s\u001B[0m%n" +
+                        "\u001B[32m ✔ \u001B[0m Port: \u001B[36m%s\u001B[0m%n" +
+                        "\t\t \u001B[31m ★ \u001B[33m%s\u001B[0m%n" +
+                        "\u001B[32m ✔ \u001B[0m Host: \u001B[36m%s\u001B[0m%n" +
+                        "\u001B[32m ✔ \u001B[0m Port: \u001B[36m%s\u001B[0m%n" +
+                        "\u001B[32m ✔ \u001B[0m Name: \u001B[36m%s\u001B[0m%n" +
+                        "\u001B[32m ✔ \u001B[0m Url: \u001B[36m%s\u001B[0m%n" +
+                        "\u001B[32m ✔ \u001B[0m hibernate ddl-auto: \u001B[36m%s\u001B[0m%n" +
+                        "\u001B[32m ✔ \u001B[0m show sql: \u001B[36m%s\u001B[0m%n" +
+                        "\u001B[32m ✔ \u001B[0m format sql: \u001B[36m%s\u001B[0m%n" +
+                        "\t\t \u001B[31m ★ \u001B[33m%s\u001B[0m%n" +
+                        "\u001B[32m ✔ \u001B[0m Host: \u001B[36m%s\u001B[0m%n" +
+                        "\u001B[32m ✔ \u001B[0m Port: \u001B[36m%s\u001B[0m%n" +
+                        "\u001B[32m ✔ \u001B[0m User: \u001B[36m%s\u001B[0m%n" +
+                        "\u001B[32m ✔ \u001B[0m Personal: \u001B[36m%s\u001B[0m%n" +
+                        "\u001B[32m ✔ \u001B[0m Is Password Empty: \u001B[36m%s\u001B[0m%n" +
+                        "\u001B[32m ✔ \u001B[0m Debug: \u001B[36m%s\u001B[0m%n" +
+                        "\u001B[32m ✔ \u001B[0m Protocol: \u001B[36m%s\u001B[0m%n" +
+                        "\u001B[32m ✔ \u001B[0m SMTP Auth: \u001B[36m%s\u001B[0m%n" +
+                        "\u001B[32m ✔ \u001B[0m Starttls Enable: \u001B[36m%s\u001B[0m%n" +
+                        "\t\t \u001B[31m ★ \u001B[33m%s\u001B[0m%n" +
+                        "\u001B[32m ✔ \u001B[0m Profile: \u001B[36m%s\u001B[0m%n" +
+                        "\u001B[32m ✔ \u001B[0m Swagger-ui Url: \u001B[36m%s\u001B[0m%n" +
                         "\u001B[32m ✔ \u001B[0m Application Started Time: \u001B[33m%s\u001B[0m%n" +
                         "\u001B[32m ▶▶Application Started Successfully!▶▶\u001B[0m%n" +
                         "\u001B[35m%s\u001B[0m%n",
                 separator,
                 posStr,
                 commonConstant.getApplicationName(),
-                commonConstant.getProfile(),
+                "Server Settings",
                 commonConstant.getServerHost(),
                 commonConstant.getServerPort(),
+                "Database Settings",
                 commonConstant.getDatabaseHost(),
                 commonConstant.getDatabasePort(),
                 commonConstant.getDatabaseName(),
@@ -66,6 +80,18 @@ public class WelcomeMessageRunner implements CommandLineRunner {
                 commonConstant.getHibernateType(),
                 commonConstant.getShowSql(),
                 commonConstant.getFormatSql(),
+                "Email Settings",
+                commonConstant.getEmailHost(),
+                commonConstant.getEmailPort(),
+                commonConstant.getEmailUsername(),
+                commonConstant.getEmailPersonal(),
+                commonConstant.isEmailPasswordEmpty(),
+                commonConstant.getEmailDebug(),
+                commonConstant.getEmailProtocol(),
+                commonConstant.getEmailSmtpAuth(),
+                commonConstant.getEmailStarttls(),
+                "Application Data",
+                commonConstant.getProfile(),
                 "http://"+commonConstant.getServerHost()+":"+commonConstant.getServerPort()+"/swagger-ui/index.html",
                 getCurrentTime(),
                 separator
