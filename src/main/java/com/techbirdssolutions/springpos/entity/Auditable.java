@@ -9,6 +9,8 @@ import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 /**
  * Represents a string metadata type.
@@ -23,7 +25,7 @@ public abstract class Auditable {
      */
     @Column(name = "created_at", updatable = false)
     @CreatedDate
-    private LocalDateTime createdAt;
+    private Timestamp createdAt;
     /**
      * The user who created the entity.
      * It is not updatable after its initial creation.
@@ -36,7 +38,7 @@ public abstract class Auditable {
      */
     @Column(name = "updated_at")
     @LastModifiedDate
-    private LocalDateTime updatedAt;
+    private Timestamp updatedAt;
     /**
      * The user who last updated the entity.
      */

@@ -83,12 +83,12 @@ public class AuthController {
 
         } catch (Exception e) {
             return new ResponseEntity<>(ResponseModel.builder()
-                    .status(HttpStatus.UNAUTHORIZED.value())
+                    .status(HttpStatus.INTERNAL_SERVER_ERROR.value())
                     .success(false)
                     .message(e.getMessage())
                     .data(ExceptionUtils.getStackTrace(e))
                     .requestId(MDC.get(CommonConstant.UNIQUE_ID_MDC_KEY))
-                    .build(), HttpStatus.UNAUTHORIZED);
+                    .build(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
     /**
@@ -111,12 +111,12 @@ public class AuthController {
 
         } catch (Exception e) {
             return new ResponseEntity<>(ResponseModel.builder()
-                    .status(HttpStatus.UNAUTHORIZED.value())
+                    .status(HttpStatus.INTERNAL_SERVER_ERROR.value())
                     .success(false)
                     .message(e.getMessage())
                     .data(ExceptionUtils.getStackTrace(e))
                     .requestId(MDC.get(CommonConstant.UNIQUE_ID_MDC_KEY))
-                    .build(), HttpStatus.UNAUTHORIZED);
+                    .build(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
     /**
@@ -139,12 +139,12 @@ public class AuthController {
 
         } catch (Exception e) {
             return new ResponseEntity<>(ResponseModel.builder()
-                    .status(HttpStatus.UNAUTHORIZED.value())
+                    .status(HttpStatus.INTERNAL_SERVER_ERROR.value())
                     .success(false)
                     .message(e.getMessage())
                     .data(ExceptionUtils.getStackTrace(e))
                     .requestId(MDC.get(CommonConstant.UNIQUE_ID_MDC_KEY))
-                    .build(), HttpStatus.UNAUTHORIZED);
+                    .build(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
     /**
@@ -167,12 +167,12 @@ public class AuthController {
                     .build(), HttpStatus.OK);
         }catch (Exception e) {
             return new ResponseEntity<>(ResponseModel.builder()
-                    .status(HttpStatus.UNAUTHORIZED.value())
+                    .status(HttpStatus.INTERNAL_SERVER_ERROR.value())
                     .success(false)
                     .message(e.getMessage())
                     .data(ExceptionUtils.getStackTrace(e))
                     .requestId(MDC.get(CommonConstant.UNIQUE_ID_MDC_KEY))
-                    .build(), HttpStatus.UNAUTHORIZED);
+                    .build(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
     }

@@ -1,5 +1,8 @@
 package com.techbirdssolutions.springpos.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -48,14 +51,17 @@ public class User extends Auditable{
     /**
      * The refresh token of the User entity.
      */
+    @JsonIgnore
     private String refreshToken;
     /**
      * The password reset token of the User entity.
      */
+    @JsonIgnore
     private String passwordResetToken;
     /**
      * The password of the User entity.
      */
+    @JsonIgnore
     private String password;
     /**
      * The display setting of the User entity.

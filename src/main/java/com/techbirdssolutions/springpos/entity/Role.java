@@ -1,5 +1,8 @@
 package com.techbirdssolutions.springpos.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -31,20 +34,21 @@ public class Role extends Auditable{
      * The name of the Role entity.
      * It is unique across all Role entities.
      */
-    @Column(unique = true)
+    @Column(unique = true, nullable = false)
     private String name;
     /**
      * The users that have this role.
      * It is a many-to-many relationship with the User entity.
      */
     @ManyToMany(mappedBy = "roles")
-    private Collection<User> users;
+    @JsonIgnore
+    transient private Collection<User> users;
     /**
      * The privileges that belong to this role.
      * It is a many-to-many relationship with the Privilege entity.
      * The relationship is managed through a join table named "roles_privileges".
      */
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinTable(
             name = "roles_privileges",
             joinColumns = @JoinColumn(
