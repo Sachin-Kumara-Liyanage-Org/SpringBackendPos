@@ -24,10 +24,13 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.io.UnsupportedEncodingException;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * This service class is responsible for handling authentication related operations.
@@ -93,6 +96,7 @@ public class AuthenticationService {
      * @return A JwtResponseModel containing the access and refresh tokens.
      * @throws LicenseExpiredException If the system license is expired.
      */
+
     private JwtResponseModel createToken(String username) throws LicenseExpiredException {
         if(isExpired()){
             log.warn("System is expired");
@@ -108,7 +112,7 @@ public class AuthenticationService {
         User user = userRepository.findByEmail(username);
         user.setRefreshToken(refreshToken);
         userRepository.save(user);
-        return new JwtResponseModel(accessToken, refreshToken,username);
+        return new JwtResponseModel(accessToken, refreshToken,username,userDetailsServiceImpl.getPrivilegesAndRolesMap(username));
     }
     /**
      * This method logs out a user by invalidating their refresh token.
@@ -147,7 +151,14 @@ public class AuthenticationService {
         log.info("Refresh token validated successfully for user: {}",username);
         return this.authenticateAndGetToken(username);
     }
-
+    /**
+     * This method generates a password reset token for a user and sends it via email.
+     *
+     * @param passwordResetRequest The request object containing the email of the user who wants to reset their password.
+     * @return A JwtResponseModel containing the refresh token and the email of the user.
+     * @throws MessagingException If there's an error while sending the email.
+     * @throws UnsupportedEncodingException If the character encoding is not supported.
+     */
     public JwtResponseModel sendPasswordResetToken(PasswordResetRequest passwordResetRequest) throws MessagingException, UnsupportedEncodingException {
         User user = userRepository.findByEmail(passwordResetRequest.getEmail());
         if(user==null){
@@ -155,12 +166,19 @@ public class AuthenticationService {
             throw new UsernameNotFoundException("User not found");
         }
         String refreshToken = jwtService.generateRefreshToken(passwordResetRequest.getEmail());
-        user.setRefreshToken(refreshToken);
+        user.setPasswordResetToken(refreshToken);
         userRepository.save(user);
         emailUtil.sendEmail(createPasswordResetEmailData(passwordResetRequest.getEmail(),refreshToken,passwordResetRequest));
-        return new JwtResponseModel(null, refreshToken,passwordResetRequest.getEmail());
+        return new JwtResponseModel(null, refreshToken,passwordResetRequest.getEmail(),null);
     }
-
+    /**
+     * This method creates an EmailData object for a password reset email.
+     *
+     * @param email The email of the user who wants to reset their password.
+     * @param token The password reset token.
+     * @param passwordResetRequest The request object containing the email of the user who wants to reset their password.
+     * @return An EmailData object containing the details of the password reset email.
+     */
     private EmailData createPasswordResetEmailData(String email, String token,PasswordResetRequest passwordResetRequest) {
         EmailData emailData = new EmailData();
         emailData.setTo(List.of(email));
@@ -171,22 +189,31 @@ public class AuthenticationService {
         emailData.setHtml(true);
         return emailData;
     }
-
-    public JwtResponseModel resetPassword(PasswordChangeRequest passwordResetRequest) throws InvalidTokenException, LicenseExpiredException, UserDisabledException {
-        String username = jwtService.getUsernameFromToken(passwordResetRequest.getToken());
+    /**
+     * This method resets a user's password.
+     *
+     * @param passwordChangeRequest The request object containing the new password and the password reset token.
+     * @return A JwtResponseModel containing the new access and refresh tokens.
+     * @throws InvalidTokenException If the password reset token is invalid.
+     * @throws LicenseExpiredException If the system license is expired.
+     * @throws UserDisabledException If the user is disabled.
+     */
+    public JwtResponseModel resetPassword(PasswordChangeRequest passwordChangeRequest) throws InvalidTokenException, LicenseExpiredException, UserDisabledException {
+        String username = jwtService.getUsernameFromToken(passwordChangeRequest.getToken());
         UserDetails userDetails = userDetailsService.loadUserByUsername(username);
-        if (!jwtService.validateToken(passwordResetRequest.getToken(),userDetails)) {
+        if (!jwtService.validateToken(passwordChangeRequest.getToken(),userDetails)) {
             log.warn("Failed to validate token for user: {}",username);
             throw new InvalidTokenException("Invalid Password Change token");
         }
         User user = userRepository.findByEmail(username);
-        if(!user.getRefreshToken().equals(passwordResetRequest.getToken())){
+        if(!user.getPasswordResetToken().equals(passwordChangeRequest.getToken())){
             log.warn("Mismatch in Password Change token for user: {}",username);
             throw new InvalidTokenException("Invalid Password Change token");
         }
 
-        user.setPassword(passwordEncoder.encode(passwordResetRequest.getNewPassword()));
+        user.setPassword(passwordEncoder.encode(passwordChangeRequest.getNewPassword()));
         user.setRefreshToken(null);
+        user.setPasswordResetToken(null);
         userRepository.save(user);
         return this.authenticateAndGetToken(username);
     }

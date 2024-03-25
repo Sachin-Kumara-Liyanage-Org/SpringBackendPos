@@ -1,5 +1,8 @@
 package com.techbirdssolutions.springpos.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -35,7 +38,7 @@ public class Privilege{
      * The category of the Privilege entity.
      * It is a many-to-one relationship with the PrivilegeCategory entity.
      */
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "privilege_category_id")
     private PrivilegeCategory privilegeCategory;
     /**
@@ -47,5 +50,6 @@ public class Privilege{
      * It is a many-to-many relationship with the Role entity.
      */
     @ManyToMany(mappedBy = "privileges", cascade = CascadeType.ALL)
-    private Collection<Role> roles;
+    @JsonIgnore
+    transient private Collection<Role> roles;
 }

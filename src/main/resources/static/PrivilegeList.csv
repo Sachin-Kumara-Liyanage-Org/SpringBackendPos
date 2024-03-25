@@ -1,3 +1,7 @@
 name,category,superAdminOnly
 DO_Encrypt,Encryption,true
 DO_Decrypt,Encryption,true
+READ_UserRole,User Management,true
+CREATE_UserRole,User Management,true
+UPDATE_UserRole,User Management,true
+DELETE_UserRole,User Management,true

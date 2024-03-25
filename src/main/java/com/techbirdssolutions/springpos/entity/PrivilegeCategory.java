@@ -1,5 +1,8 @@
 package com.techbirdssolutions.springpos.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -36,7 +39,8 @@ public class PrivilegeCategory{
      * It is a one-to-many relationship with the Privilege entity.
      */
     @OneToMany(mappedBy = "privilegeCategory")
-    private Collection<Privilege> privileges;
+    @JsonIgnore
+    transient private Collection<Privilege> privileges;
 
 
 }
